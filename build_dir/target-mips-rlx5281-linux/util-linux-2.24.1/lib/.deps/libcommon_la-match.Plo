@@ -1,0 +1,21 @@
+lib/libcommon_la-match.lo: lib/match.c config.h \
+ /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/include/string.h \
+ /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/include/features.h \
+ /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/include/bits/uClibc_config.h \
+ /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/include/sys/cdefs.h \
+ /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/include/stddef.h \
+ include/match.h
+
+config.h:
+
+/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/include/string.h:
+
+/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/include/features.h:
+
+/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/include/bits/uClibc_config.h:
+
+/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/include/sys/cdefs.h:
+
+/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/include/stddef.h:
+
+include/match.h:

@@ -1,0 +1,16 @@
+Package: mpd-mini
+Version: 0.17.6-4
+Depends: libc, glib2, libcurl, libpthread, libflac, libmad, libvorbisidec
+Provides: mpd
+Source: feeds/packages/sound/mpd
+Section: sound
+Maintainer: Ted Hess <thess@kitschensync.net>
+Architecture: realtek
+Installed-Size: 116053
+Description:  Music Player Daemon (MPD) is a flexible, powerful, server-side
+ application for playing music. It is typically controlled over a
+ network using one of it's many clients including mpc (console),
+ gmpc (gnome), phpmp (php), etc...
+ .
+ This package contains a minimal Music Player Daemon, with support for
+ only Flac, MP3 & OGG media types & only file: & http: protocols.

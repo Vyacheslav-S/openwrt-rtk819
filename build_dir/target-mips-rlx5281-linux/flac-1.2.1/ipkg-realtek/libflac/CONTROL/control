@@ -1,0 +1,11 @@
+Package: libflac
+Version: 1.2.1-1
+Depends: libc
+Source: feeds/packages/libs/flac
+License: GFDLv1.2 GPLv2 LGPLv2.1 BSD-3c
+LicenseFiles: README COPYING.FDL COPYING.GPL COPYING.LGPL COPYING.Xiph
+Section: libs
+Maintainer: Ted Hess <thess@kitschensync.net>
+Architecture: realtek
+Installed-Size: 85825
+Description:  Free Lossless Audio Codec library

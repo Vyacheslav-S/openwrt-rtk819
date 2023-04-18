@@ -1,0 +1,3 @@
+/lib/modules/3.10.49/snd-usb-audio.ko
+/etc/modules.d/usb-audio
+/lib/modules/3.10.49/snd-usbmidi-lib.ko

@@ -1,0 +1,140 @@
+'\" t
+.\"     Title: afInitFileFormat
+.\"    Author: [see the "AUTHOR" section]
+.\" Generator: DocBook XSL Stylesheets v1.76.1 <http://docbook.sf.net/>
+.\"      Date: 03/06/2013
+.\"    Manual: \ \&
+.\"    Source: Audio File Library 0.3.6
+.\"  Language: English
+.\"
+.TH "AFINITFILEFORMAT" "3" "03/06/2013" "Audio File Library 0\&.3\&.6" "\ \&"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+afInitFileFormat \- initialize file format of an audio file setup
+.SH "SYNOPSIS"
+.sp
+.nf
+#include <audiofile\&.h>
+.fi
+.sp
+.nf
+void afInitFileFormat(AFfilesetup setup, int fileFormat);
+.fi
+.SH "PARAMETERS"
+.sp
+setup is a valid file setup created by \fBafNewFileSetup\fR(3)\&.
+.sp
+fileFormat is an integer constant specifying a file format\&.
+.SH "DESCRIPTION"
+.sp
+Given an AFfilesetup structure created with \fBafNewFileSetup\fR(3), afInitFileFormat initializes the file format to that specified by fileFormat\&.
+.sp
+The following file formats are currently supported:
+.PP
+AF_FILE_RAWDATA
+.RS 4
+raw audio data
+.RE
+.PP
+AF_FILE_AIFF
+.RS 4
+Audio Interchange File Format
+.RE
+.PP
+AF_FILE_AIFFC
+.RS 4
+Audio Interchange File Format AIFF\-C
+.RE
+.PP
+AF_FILE_NEXTSND
+.RS 4
+NeXT \&.snd/Sun \&.au
+.RE
+.PP
+AF_FILE_WAVE
+.RS 4
+Microsoft RIFF WAVE
+.RE
+.PP
+AF_FILE_BICSF
+.RS 4
+Berkeley/IRCAM/CARL Sound File
+.RE
+.PP
+AF_FILE_AVR
+.RS 4
+Audio Visual Research
+.RE
+.PP
+AF_FILE_IFF_8SVX
+.RS 4
+Amiga IFF/8SVX
+.RE
+.PP
+AF_FILE_SAMPLEVISION
+.RS 4
+Sample Vision
+.RE
+.PP
+AF_FILE_VOC
+.RS 4
+Creative Voice File
+.RE
+.PP
+AF_FILE_NIST_SPHERE
+.RS 4
+NIST SPHERE
+.RE
+.PP
+AF_FILE_CAF
+.RS 4
+Core Audio Format
+.RE
+.SH "ERRORS"
+.sp
+afInitFileFormat can produce the following errors:
+.PP
+AF_BAD_FILESETUP
+.RS 4
+
+setup
+represents an invalid file setup\&.
+.RE
+.PP
+AF_BAD_FILEFMT
+.RS 4
+
+fileFormat
+represents an unknown file format\&.
+.RE
+.PP
+AF_BAD_NOT_IMPLEMENTED
+.RS 4
+
+fileFormat
+represents a file format which is not currently implemented\&.
+.RE
+.SH "SEE ALSO"
+.sp
+\fBafNewFileSetup\fR(3)
+.SH "AUTHOR"
+.sp
+Michael Pruett <michael@68k\&.org>

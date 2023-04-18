@@ -1,0 +1,11 @@
+src/mips/n32.lo: ../src/mips/n32.S fficonfig.h include/ffi.h \
+ include/ffitarget.h \
+ /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/include/asm/sgidefs.h
+
+fficonfig.h:
+
+include/ffi.h:
+
+include/ffitarget.h:
+
+/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/include/asm/sgidefs.h:

@@ -1,0 +1,141 @@
+The target system is: Linux - 1 - rlx
+The host system is: Linux - 4.15.0-208-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//bin/rsdk-linux-gcc 
+Build flags: -Os;-pipe;-march=5281;-fno-caller-saves;
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/uhttpd-2014-08-25/CMakeFiles/2.8.12.2/CompilerIdC/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/uhttpd-2014-08-25/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec662792549/fast"
+make[4]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/uhttpd-2014-08-25/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec662792549.dir/build.make CMakeFiles/cmTryCompileExec662792549.dir/build
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/uhttpd-2014-08-25/CMakeFiles/CMakeTmp'
+/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/bin/cmake -E cmake_progress_report /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/uhttpd-2014-08-25/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec662792549.dir/testCCompiler.c.o
+/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/rsdk-linux-gcc   -Os -pipe -march=5281 -fno-caller-saves      -o CMakeFiles/cmTryCompileExec662792549.dir/testCCompiler.c.o   -c /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/uhttpd-2014-08-25/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec662792549
+/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec662792549.dir/link.txt --verbose=1
+/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/rsdk-linux-gcc  -Os -pipe -march=5281 -fno-caller-saves      -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib -lcrypt  CMakeFiles/cmTryCompileExec662792549.dir/testCCompiler.c.o  -o cmTryCompileExec662792549 -rdynamic 
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/uhttpd-2014-08-25/CMakeFiles/CMakeTmp'
+make[4]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/uhttpd-2014-08-25/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/uhttpd-2014-08-25/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3055981636/fast"
+make[4]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/uhttpd-2014-08-25/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3055981636.dir/build.make CMakeFiles/cmTryCompileExec3055981636.dir/build
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/uhttpd-2014-08-25/CMakeFiles/CMakeTmp'
+/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/bin/cmake -E cmake_progress_report /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/uhttpd-2014-08-25/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3055981636.dir/CMakeCCompilerABI.c.o
+/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/rsdk-linux-gcc   -Os -pipe -march=5281 -fno-caller-saves      -o CMakeFiles/cmTryCompileExec3055981636.dir/CMakeCCompilerABI.c.o   -c /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec3055981636
+/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3055981636.dir/link.txt --verbose=1
+/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/rsdk-linux-gcc  -Os -pipe -march=5281 -fno-caller-saves     -v CMakeFiles/cmTryCompileExec3055981636.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3055981636 -rdynamic  
+Reading specs from /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/specs
+COLLECT_GCC=/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//bin/mips-linux-xgcc
+COLLECT_LTO_WRAPPER=/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../libexec/gcc/mips-linux-uclibc/4.6.4/lto-wrapper
+Target: mips-linux-uclibc
+Configured with: Realtek SDK Builder release 4.6
+Thread model: posix
+gcc version 4.6.4 (Realtek RSDK-4.6.4 Build 2002) 
+COMPILER_PATH=/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../libexec/gcc/mips-linux-uclibc/4.6.4/:/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../libexec/gcc/:/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/bin/
+LIBRARY_PATH=/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/:/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/:/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/lib/:/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib/:/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//usr/lib/
+COLLECT_GCC_OPTIONS='-ffix-bdsl' '-fuse-tls' '-fuse-uls' '-msoft-float' '-EB' '-Os' '-pipe' '-march=5281' '-fno-caller-saves' '-v' '-o' 'cmTryCompileExec3055981636' '-rdynamic' '-mplt' '-mno-synci' '-mno-shared'
+ /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../libexec/gcc/mips-linux-uclibc/4.6.4/collect2 --sysroot=/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/ --eh-frame-hdr -EB -export-dynamic -dynamic-linker /lib/ld-uClibc.so.0 -o cmTryCompileExec3055981636 /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/lib/crt1.o /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/lib/crti.o /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/crtbegin.o -L /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib -rpath-link /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4 -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//usr/lib CMakeFiles/cmTryCompileExec3055981636.dir/CMakeCCompilerABI.c.o -lgcc_s -lc -lgcc_s /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/crtend.o /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/lib/crtn.o
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/uhttpd-2014-08-25/CMakeFiles/CMakeTmp'
+make[4]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/uhttpd-2014-08-25/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(rsdk-linux-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/uhttpd-2014-08-25/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec3055981636/fast"]
+  ignore line: [make[4]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/uhttpd-2014-08-25/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3055981636.dir/build.make CMakeFiles/cmTryCompileExec3055981636.dir/build]
+  ignore line: [make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/uhttpd-2014-08-25/CMakeFiles/CMakeTmp']
+  ignore line: [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/bin/cmake -E cmake_progress_report /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/uhttpd-2014-08-25/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec3055981636.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/rsdk-linux-gcc   -Os -pipe -march=5281 -fno-caller-saves      -o CMakeFiles/cmTryCompileExec3055981636.dir/CMakeCCompilerABI.c.o   -c /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec3055981636]
+  ignore line: [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3055981636.dir/link.txt --verbose=1]
+  ignore line: [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/rsdk-linux-gcc  -Os -pipe -march=5281 -fno-caller-saves     -v CMakeFiles/cmTryCompileExec3055981636.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3055981636 -rdynamic  ]
+  ignore line: [Reading specs from /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/specs]
+  ignore line: [COLLECT_GCC=/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//bin/mips-linux-xgcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../libexec/gcc/mips-linux-uclibc/4.6.4/lto-wrapper]
+  ignore line: [Target: mips-linux-uclibc]
+  ignore line: [Configured with: Realtek SDK Builder release 4.6]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.6.4 (Realtek RSDK-4.6.4 Build 2002) ]
+  ignore line: [COMPILER_PATH=/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../libexec/gcc/mips-linux-uclibc/4.6.4/:/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../libexec/gcc/:/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/bin/]
+  ignore line: [LIBRARY_PATH=/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/:/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/:/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/lib/:/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib/:/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-ffix-bdsl' '-fuse-tls' '-fuse-uls' '-msoft-float' '-EB' '-Os' '-pipe' '-march=5281' '-fno-caller-saves' '-v' '-o' 'cmTryCompileExec3055981636' '-rdynamic' '-mplt' '-mno-synci' '-mno-shared']
+  link line: [ /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../libexec/gcc/mips-linux-uclibc/4.6.4/collect2 --sysroot=/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/ --eh-frame-hdr -EB -export-dynamic -dynamic-linker /lib/ld-uClibc.so.0 -o cmTryCompileExec3055981636 /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/lib/crt1.o /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/lib/crti.o /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/crtbegin.o -L /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib -rpath-link /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4 -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//usr/lib CMakeFiles/cmTryCompileExec3055981636.dir/CMakeCCompilerABI.c.o -lgcc_s -lc -lgcc_s /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/crtend.o /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/lib/crtn.o]
+    arg [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../libexec/gcc/mips-linux-uclibc/4.6.4/collect2] ==> ignore
+    arg [--sysroot=/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-EB] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-uClibc.so.0] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec3055981636] ==> ignore
+    arg [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/lib/crt1.o] ==> ignore
+    arg [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/lib/crti.o] ==> ignore
+    arg [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/crtbegin.o] ==> ignore
+    arg [-L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib] ==> dir [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib]
+    arg [-rpath-link] ==> ignore
+    arg [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib] ==> ignore
+    arg [-L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4] ==> dir [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4]
+    arg [-L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc] ==> dir [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc]
+    arg [-L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/lib] ==> dir [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/lib]
+    arg [-L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib] ==> dir [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib]
+    arg [-L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//usr/lib] ==> dir [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//usr/lib]
+    arg [CMakeFiles/cmTryCompileExec3055981636.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/crtend.o] ==> ignore
+    arg [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/lib/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc_s]
+  collapse library dir [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib] ==> [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib]
+  collapse library dir [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4] ==> [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/lib/gcc/mips-linux-uclibc/4.6.4]
+  collapse library dir [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc] ==> [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/lib/gcc]
+  collapse library dir [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/../lib/gcc/mips-linux-uclibc/4.6.4/../../../../mips-linux-uclibc/lib] ==> [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/mips-linux-uclibc/lib]
+  collapse library dir [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib] ==> [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/lib]
+  collapse library dir [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//usr/lib] ==> [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib;/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/lib/gcc/mips-linux-uclibc/4.6.4;/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/lib/gcc;/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/mips-linux-uclibc/lib;/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/lib;/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/usr/lib]
+  implicit fwks: []
+
+
+Determining if the function getspnam exists passed with the following output:
+Change Dir: /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/uhttpd-2014-08-25/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1539179638/fast"
+make[4]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/uhttpd-2014-08-25/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1539179638.dir/build.make CMakeFiles/cmTryCompileExec1539179638.dir/build
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/uhttpd-2014-08-25/CMakeFiles/CMakeTmp'
+/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/bin/cmake -E cmake_progress_report /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/uhttpd-2014-08-25/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1539179638.dir/CheckFunctionExists.c.o
+/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/rsdk-linux-gcc   -Os -pipe -march=5281 -fno-caller-saves   -DCHECK_FUNCTION_EXISTS=getspnam   -o CMakeFiles/cmTryCompileExec1539179638.dir/CheckFunctionExists.c.o   -c /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1539179638
+/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1539179638.dir/link.txt --verbose=1
+/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/rsdk-linux-gcc  -Os -pipe -march=5281 -fno-caller-saves   -DCHECK_FUNCTION_EXISTS=getspnam   -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib -lcrypt  CMakeFiles/cmTryCompileExec1539179638.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1539179638 -rdynamic 
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/uhttpd-2014-08-25/CMakeFiles/CMakeTmp'
+make[4]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/uhttpd-2014-08-25/CMakeFiles/CMakeTmp'
+
+

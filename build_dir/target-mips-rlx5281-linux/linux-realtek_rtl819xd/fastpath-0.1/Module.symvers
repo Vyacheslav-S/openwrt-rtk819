@@ -1,0 +1,5 @@
+0x00000000	fast_pppoe_init	/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/linux-realtek_rtl819xd/fastpath-0.1/fastpath	EXPORT_SYMBOL
+0x00000000	check_and_pull_pppoe_hdr	/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/linux-realtek_rtl819xd/fastpath-0.1/fastpath	EXPORT_SYMBOL
+0x00000000	fast_pppoe_exit	/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/linux-realtek_rtl819xd/fastpath-0.1/fastpath	EXPORT_SYMBOL
+0x00000000	fast_pppoe_xmit	/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/linux-realtek_rtl819xd/fastpath-0.1/fastpath	EXPORT_SYMBOL
+0x00000000	check_and_restore_pppoe_hdr	/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/linux-realtek_rtl819xd/fastpath-0.1/fastpath	EXPORT_SYMBOL

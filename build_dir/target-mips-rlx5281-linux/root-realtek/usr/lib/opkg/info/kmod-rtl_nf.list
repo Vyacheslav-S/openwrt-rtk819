@@ -1,0 +1,2 @@
+/etc/modules.d/50-rtl_nf
+/lib/modules/3.10.49/rtl_nf.ko

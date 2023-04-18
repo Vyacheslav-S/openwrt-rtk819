@@ -1,0 +1,9 @@
+Package: kmod-rtl8192cd
+Version: 3.10.49+2014-05-22-1
+Depends: kernel (=3.10.49-1-a7f84303e512c94837a166161dd231f8), kmod-mac80211
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: realtek
+Installed-Size: 839493
+Description:  This module adds support for Realtek rtl8192cd wireless adapters

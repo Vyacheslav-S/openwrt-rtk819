@@ -1,0 +1,848 @@
+--2023-04-18 19:07:16--  ftp://ftp.alsa-project.org/pub/lib/alsa-lib-1.0.27.2.tar.bz2
+           => '-'
+Resolving ftp.alsa-project.org (ftp.alsa-project.org)... 207.180.221.201
+Connecting to ftp.alsa-project.org (ftp.alsa-project.org)|207.180.221.201|:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /pub/lib ... done.
+==> SIZE alsa-lib-1.0.27.2.tar.bz2 ... 906844
+==> PASV ... done.    ==> RETR alsa-lib-1.0.27.2.tar.bz2 ... done.
+Length: 906844 (886K) (unauthoritative)
+
+     0K .......... .......... .......... .......... ..........  5%  169K 5s
+    50K .......... .......... .......... .......... .......... 11%  433K 3s
+   100K .......... .......... .......... .......... .......... 16%  530M 2s
+   150K .......... .......... .......... .......... .......... 22%  315K 2s
+   200K .......... .......... .......... .......... .......... 28% 2.20M 2s
+   250K .......... .......... .......... .......... .......... 33%  551K 1s
+   300K .......... .......... .......... .......... .......... 39%  586K 1s
+   350K .......... .......... .......... .......... .......... 45% 6.00M 1s
+   400K .......... .......... .......... .......... .......... 50%  550K 1s
+   450K .......... .......... .......... .......... .......... 56%  893K 1s
+   500K .......... .......... .......... .......... .......... 62% 1.35M 1s
+   550K .......... .......... .......... .......... .......... 67%  644K 0s
+   600K .......... .......... .......... .......... .......... 73% 3.58M 0s
+   650K .......... .......... .......... .......... .......... 79%  596K 0s
+   700K .......... .......... .......... .......... .......... 84%  631K 0s
+   750K .......... .......... .......... .......... .......... 90% 3.81M 0s
+   800K .......... .......... .......... .......... .......... 95%  641K 0s
+   850K .......... .......... .......... .....                100% 2.99M=1.3s
+
+2023-04-18 19:07:19 (672 KB/s) - written to stdout [906844]
+
+
+Applying ./patches/001-link_fix.patch using plaintext: 
+patching file src/Makefile.in
+patching file src/pcm/scopes/Makefile.in
+
+Applying ./patches/002-ccache.patch using plaintext: 
+patching file configure.in
+autoreconf: Entering directory `.'
+autoreconf: configure.in: not using Gettext
+autoreconf: running: /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/bin/aclocal -I /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/host/share/aclocal -I /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/share/aclocal -I m4 -I . --force -I m4
+main::scan_file() called too early to check prototype at /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/bin/aclocal.real line 651.
+configure.in:38: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:194: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2662: _AC_LINK_IFELSE is expanded from...
+../../lib/autoconf/general.m4:2679: AC_LINK_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:606: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2032: AC_CACHE_VAL is expanded from...
+../../lib/autoconf/general.m4:2053: AC_CACHE_CHECK is expanded from...
+m4/attributes.m4:87: CC_CHECK_LDFLAGS is expanded from...
+m4/attributes.m4:104: CC_NOUNDEFINED is expanded from...
+configure.in:38: the top level
+autoreconf: configure.in: tracing
+configure.in:38: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:194: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2662: _AC_LINK_IFELSE is expanded from...
+../../lib/autoconf/general.m4:2679: AC_LINK_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:606: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2032: AC_CACHE_VAL is expanded from...
+../../lib/autoconf/general.m4:2053: AC_CACHE_CHECK is expanded from...
+m4/attributes.m4:87: CC_CHECK_LDFLAGS is expanded from...
+m4/attributes.m4:104: CC_NOUNDEFINED is expanded from...
+configure.in:38: the top level
+autoreconf: running: /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/bin/libtoolize --force
+OpenWrt-libtoolize: putting auxiliary files in `.'.
+OpenWrt-libtoolize: linking file `./ltmain.sh'
+OpenWrt-libtoolize: putting macros in AC_CONFIG_MACRO_DIR, `m4'.
+OpenWrt-libtoolize: linking file `m4/libtool.m4'
+OpenWrt-libtoolize: linking file `m4/ltoptions.m4'
+OpenWrt-libtoolize: linking file `m4/ltsugar.m4'
+OpenWrt-libtoolize: linking file `m4/ltversion.m4'
+OpenWrt-libtoolize: linking file `m4/lt~obsolete.m4'
+main::scan_file() called too early to check prototype at /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/bin/aclocal.real line 651.
+configure.in:38: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:194: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2662: _AC_LINK_IFELSE is expanded from...
+../../lib/autoconf/general.m4:2679: AC_LINK_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:606: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2032: AC_CACHE_VAL is expanded from...
+../../lib/autoconf/general.m4:2053: AC_CACHE_CHECK is expanded from...
+m4/attributes.m4:87: CC_CHECK_LDFLAGS is expanded from...
+m4/attributes.m4:104: CC_NOUNDEFINED is expanded from...
+configure.in:38: the top level
+autoreconf: running: /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/bin/autoconf --include=/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/host/share/aclocal --include=/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/share/aclocal --include=m4 --include=. --prepend-include=/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/share/aclocal --force
+configure.in:38: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:194: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2662: _AC_LINK_IFELSE is expanded from...
+../../lib/autoconf/general.m4:2679: AC_LINK_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:606: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2032: AC_CACHE_VAL is expanded from...
+../../lib/autoconf/general.m4:2053: AC_CACHE_CHECK is expanded from...
+m4/attributes.m4:87: CC_CHECK_LDFLAGS is expanded from...
+m4/attributes.m4:104: CC_NOUNDEFINED is expanded from...
+configure.in:38: the top level
+autoreconf: running: /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/bin/autoheader --include=/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/host/share/aclocal --include=/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/share/aclocal --include=m4 --include=. --prepend-include=/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/share/aclocal --force
+configure.in:38: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:194: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2662: _AC_LINK_IFELSE is expanded from...
+../../lib/autoconf/general.m4:2679: AC_LINK_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:606: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2032: AC_CACHE_VAL is expanded from...
+../../lib/autoconf/general.m4:2053: AC_CACHE_CHECK is expanded from...
+m4/attributes.m4:87: CC_CHECK_LDFLAGS is expanded from...
+m4/attributes.m4:104: CC_NOUNDEFINED is expanded from...
+configure.in:38: the top level
+autoreconf: running: /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/bin/automake --add-missing --force-missing
+configure.in:38: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:194: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2662: _AC_LINK_IFELSE is expanded from...
+../../lib/autoconf/general.m4:2679: AC_LINK_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:606: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2032: AC_CACHE_VAL is expanded from...
+../../lib/autoconf/general.m4:2053: AC_CACHE_CHECK is expanded from...
+m4/attributes.m4:87: CC_CHECK_LDFLAGS is expanded from...
+m4/attributes.m4:104: CC_NOUNDEFINED is expanded from...
+configure.in:38: the top level
+autoreconf: Leaving directory `.'
+configure: WARNING: unrecognized options: --disable-nls, --disable-ipv6, --disable-debug
+configure: loading site script /home/svm/openwrt_rtk/rtk_openwrt_sdk/include/site/mips-rlx5281-linux
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... mips-rlx5281-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for mips-rlx5281-linux-strip... rsdk-linux-strip
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking whether make supports nested variables... yes
+checking for mips-rlx5281-linux-gcc... rsdk-linux-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... yes
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether rsdk-linux-gcc accepts -g... yes
+checking for rsdk-linux-gcc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of rsdk-linux-gcc... gcc3
+checking how to run the C preprocessor... rsdk-linux-gcc -E
+checking whether ln -s works... yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/bin/sed
+checking for grep that handles long lines and -e... /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/bin/grep
+checking for egrep... /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/bin/grep -E
+checking for fgrep... /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/bin/grep -F
+checking for ld used by rsdk-linux-gcc... rsdk-linux-ld
+checking if the linker (rsdk-linux-ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... rsdk-linux-nm
+checking the name lister (rsdk-linux-nm) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-pc-linux-gnu file names to mips-rlx5281-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for rsdk-linux-ld option to reload object files... -r
+checking for mips-rlx5281-linux-objdump... rsdk-linux-objdump
+checking how to recognize dependent libraries... pass_all
+checking for mips-rlx5281-linux-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for mips-rlx5281-linux-ar... rsdk-linux-ar
+checking for archiver @FILE support... @
+checking for mips-rlx5281-linux-strip... (cached) rsdk-linux-strip
+checking for mips-rlx5281-linux-ranlib... rsdk-linux-ranlib
+checking command to parse rsdk-linux-nm output from rsdk-linux-gcc object... ok
+checking for sysroot... no
+checking for mips-rlx5281-linux-mt... no
+checking for mt... mt
+configure: WARNING: using cross tools not prefixed with host triplet
+checking if mt is a manifest tool... no
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if rsdk-linux-gcc supports -fno-rtti -fno-exceptions... no
+checking for rsdk-linux-gcc option to produce PIC... -fPIC -DPIC
+checking if rsdk-linux-gcc PIC flag -fPIC -DPIC works... yes
+checking if rsdk-linux-gcc static flag -static works... yes
+checking if rsdk-linux-gcc supports -c -o file.o... yes
+checking if rsdk-linux-gcc supports -c -o file.o... (cached) yes
+checking whether the rsdk-linux-gcc linker (rsdk-linux-ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dlopen... no
+checking for dlopen in -ldl... yes
+checking whether a program can dlopen itself... cross
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking if rsdk-linux-gcc supports -Wl,--no-undefined flag... yes
+checking for ANSI C header files... (cached) yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking whether time.h and sys/time.h may both be included... yes
+checking whether rsdk-linux-gcc needs -traditional... no
+checking for hsearch_r... yes
+checking for uselocale... no
+checking for library version... major 1 minor 0 subminor 27 extrastr  extraver 1000000
+checking for versioned symbols... no
+checking for symbolic-functions... no
+checking for custom symbol prefixes... 
+checking for debug... no
+checking for tmpdir... /tmp
+checking for softfloat... no
+checking for libdl... checking for dlsym in -ldl... yes
+checking for pthread... checking for pthread_join in -lpthread... yes
+checking for __thread... yes
+checking for librt... checking for clock_gettime in -lrt... yes
+checking for architecture... mips
+checking wordexp.h usability... yes
+checking wordexp.h presence... yes
+checking for wordexp.h... yes
+checking for resmgr support... no
+checking for aload* support... yes
+checking for ALSA device file directory... /dev/snd/
+checking for aload* device file directory... /dev/
+checking for max number of cards... 32
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/pictures/Makefile
+config.status: creating doc/doxygen.cfg
+config.status: creating include/Makefile
+config.status: creating include/sound/Makefile
+config.status: creating src/Versions
+config.status: creating src/Makefile
+config.status: creating src/control/Makefile
+config.status: creating src/mixer/Makefile
+config.status: creating src/pcm/Makefile
+config.status: creating src/pcm/scopes/Makefile
+config.status: creating src/rawmidi/Makefile
+config.status: creating src/timer/Makefile
+config.status: creating src/hwdep/Makefile
+config.status: creating src/seq/Makefile
+config.status: creating src/ucm/Makefile
+config.status: creating src/compat/Makefile
+config.status: creating src/alisp/Makefile
+config.status: creating src/conf/Makefile
+config.status: creating src/conf/alsa.conf.d/Makefile
+config.status: creating src/conf/cards/Makefile
+config.status: creating src/conf/pcm/Makefile
+config.status: creating src/conf/ucm/Makefile
+config.status: creating src/conf/ucm/DAISY-I2S/Makefile
+config.status: creating src/conf/ucm/PandaBoard/Makefile
+config.status: creating src/conf/ucm/PandaBoardES/Makefile
+config.status: creating src/conf/ucm/SDP4430/Makefile
+config.status: creating src/conf/ucm/tegraalc5632/Makefile
+config.status: creating modules/Makefile
+config.status: creating modules/mixer/Makefile
+config.status: creating modules/mixer/simple/Makefile
+config.status: creating alsalisp/Makefile
+config.status: creating aserver/Makefile
+config.status: creating test/Makefile
+config.status: creating test/lsb/Makefile
+config.status: creating utils/Makefile
+config.status: creating utils/alsa-lib.spec
+config.status: creating utils/alsa.pc
+config.status: creating include/config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+configure: WARNING: unrecognized options: --disable-nls, --disable-ipv6, --disable-debug
+Creating asoundlib.h...
+make[4]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2'
+Making all in doc
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/doc'
+Making all in pictures
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/doc/pictures'
+make[6]: Nothing to be done for 'all'.
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/doc/pictures'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/doc'
+make[6]: Nothing to be done for 'all-am'.
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/doc'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/doc'
+Making all in include
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/include'
+make  all-recursive
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/include'
+Making all in sound
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/include/sound'
+make[7]: Nothing to be done for 'all'.
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/include/sound'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/include'
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/include'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/include'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/include'
+Making all in src
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src'
+Making all in control
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/control'
+  CC     cards.lo
+  CC     tlv.lo
+  CC     namehint.lo
+  CC     hcontrol.lo
+  CC     control.lo
+  CC     control_hw.lo
+  CC     setup.lo
+  CC     ctlparse.lo
+  CC     control_symbols.lo
+  CC     control_shm.lo
+  CC     control_ext.lo
+  CCLD   libcontrol.la
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/control'
+Making all in mixer
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/mixer'
+  CC     bag.lo
+  CC     mixer.lo
+  CC     simple.lo
+  CC     simple_none.lo
+  CC     simple_abst.lo
+  CCLD   libmixer.la
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/mixer'
+Making all in pcm
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/pcm'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/pcm'
+make[7]: Nothing to be done for 'all-am'.
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/pcm'
+  CC     atomic.lo
+  CC     mask.lo
+  CC     interval.lo
+  CC     pcm.lo
+  CC     pcm_params.lo
+  CC     pcm_simple.lo
+  CC     pcm_hw.lo
+  CC     pcm_misc.lo
+  CC     pcm_mmap.lo
+  CC     pcm_symbols.lo
+  CC     pcm_generic.lo
+  CC     pcm_plugin.lo
+  CC     pcm_copy.lo
+  CC     pcm_linear.lo
+  CC     pcm_route.lo
+  CC     pcm_mulaw.lo
+  CC     pcm_alaw.lo
+  CC     pcm_adpcm.lo
+  CC     pcm_rate.lo
+  CC     pcm_rate_linear.lo
+  CC     pcm_plug.lo
+  CC     pcm_multi.lo
+  CC     pcm_shm.lo
+  CC     pcm_file.lo
+  CC     pcm_null.lo
+  CC     pcm_empty.lo
+  CC     pcm_share.lo
+  CC     pcm_meter.lo
+  CC     pcm_hooks.lo
+  CC     pcm_lfloat.lo
+  CC     pcm_ladspa.lo
+  CC     pcm_dmix.lo
+  CC     pcm_dshare.lo
+  CC     pcm_dsnoop.lo
+  CC     pcm_direct.lo
+  CC     pcm_asym.lo
+  CC     pcm_iec958.lo
+  CC     pcm_softvol.lo
+  CC     pcm_extplug.lo
+  CC     pcm_ioplug.lo
+  CC     pcm_mmap_emul.lo
+  CCLD   libpcm.la
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/pcm'
+Making all in timer
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/timer'
+  CC     timer.lo
+  CC     timer_hw.lo
+  CC     timer_query.lo
+  CC     timer_query_hw.lo
+  CC     timer_symbols.lo
+  CCLD   libtimer.la
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/timer'
+Making all in rawmidi
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/rawmidi'
+  CC     rawmidi.lo
+  CC     rawmidi_hw.lo
+  CC     rawmidi_symbols.lo
+  CC     rawmidi_virt.lo
+  CCLD   librawmidi.la
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/rawmidi'
+Making all in hwdep
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/hwdep'
+  CC     hwdep.lo
+  CC     hwdep_hw.lo
+  CC     hwdep_symbols.lo
+  CCLD   libhwdep.la
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/hwdep'
+Making all in seq
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/seq'
+  CC     seq_hw.lo
+  CC     seq.lo
+  CC     seq_event.lo
+  CC     seqmid.lo
+  CC     seq_midi_event.lo
+  CC     seq_symbols.lo
+  CC     seq_old.lo
+  CCLD   libseq.la
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/seq'
+Making all in ucm
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/ucm'
+  CC     utils.lo
+  CC     parser.lo
+  CC     main.lo
+  CCLD   libucm.la
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/ucm'
+Making all in alisp
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/alisp'
+  CC     alisp.lo
+  CCLD   libalisp.la
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/alisp'
+Making all in compat
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/compat'
+  CC     empty.lo
+  CCLD   libcompat.la
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/compat'
+Making all in conf
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf'
+Making all in cards
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/cards'
+make[7]: Nothing to be done for 'all'.
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/cards'
+Making all in pcm
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/pcm'
+make[7]: Nothing to be done for 'all'.
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/pcm'
+Making all in alsa.conf.d
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/alsa.conf.d'
+make[7]: Nothing to be done for 'all'.
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/alsa.conf.d'
+Making all in ucm
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm'
+Making all in DAISY-I2S
+make[8]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/DAISY-I2S'
+make[8]: Nothing to be done for 'all'.
+make[8]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/DAISY-I2S'
+Making all in PandaBoard
+make[8]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/PandaBoard'
+make[8]: Nothing to be done for 'all'.
+make[8]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/PandaBoard'
+Making all in PandaBoardES
+make[8]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/PandaBoardES'
+make[8]: Nothing to be done for 'all'.
+make[8]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/PandaBoardES'
+Making all in SDP4430
+make[8]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/SDP4430'
+make[8]: Nothing to be done for 'all'.
+make[8]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/SDP4430'
+Making all in tegraalc5632
+make[8]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/tegraalc5632'
+make[8]: Nothing to be done for 'all'.
+make[8]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/tegraalc5632'
+make[8]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm'
+make[8]: Nothing to be done for 'all-am'.
+make[8]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm'
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf'
+make[7]: Nothing to be done for 'all-am'.
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src'
+  CC     conf.lo
+  CC     confmisc.lo
+  CC     input.lo
+  CC     output.lo
+  CC     async.lo
+  CC     error.lo
+  CC     dlmisc.lo
+  CC     socket.lo
+  CC     shmarea.lo
+  CC     userfile.lo
+  CC     names.lo
+  CCLD   libasound.la
+pcm/.libs/libpcm.a(pcm_generic.o): In function `snd1_pcm_generic_hwsync':
+pcm_generic.c:(.text+0x260): warning: 
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src'
+Making all in modules
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules'
+Making all in mixer
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules/mixer'
+Making all in simple
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules/mixer/simple'
+  CC     sbase.lo
+sbase.c: In function 'simple_event_add1':
+sbase.c:327:16: warning: variable 'values' set but not used [-Wunused-but-set-variable]
+  CCLD   smixer-sbase.la
+  CC     ac97.lo
+  CC     sbasedl.lo
+  CCLD   smixer-ac97.la
+  CC     hda.lo
+  CCLD   smixer-hda.la
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules/mixer/simple'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules/mixer'
+make[7]: Nothing to be done for 'all-am'.
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules/mixer'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules/mixer'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules'
+make[6]: Nothing to be done for 'all-am'.
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules'
+Making all in aserver
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/aserver'
+  CC     aserver.o
+  CCLD   aserver
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/aserver'
+Making all in alsalisp
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/alsalisp'
+  CC     alsalisp.o
+  CCLD   alsalisp
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/alsalisp'
+Making all in test
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/test'
+Making all in .
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/test'
+make[6]: Nothing to be done for 'all-am'.
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/test'
+Making all in lsb
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/test/lsb'
+make[6]: Nothing to be done for 'all'.
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/test/lsb'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/test'
+Making all in utils
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/utils'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/utils'
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2'
+make[5]: Nothing to be done for 'all-am'.
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2'
+make[4]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2'
+make[4]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2'
+Making install in doc
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/doc'
+Making install in pictures
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/doc/pictures'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/doc/pictures'
+make[7]: Nothing to be done for 'install-exec-am'.
+make[7]: Nothing to be done for 'install-data-am'.
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/doc/pictures'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/doc/pictures'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/doc'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/doc'
+make[7]: Nothing to be done for 'install-exec-am'.
+make[7]: Nothing to be done for 'install-data-am'.
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/doc'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/doc'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/doc'
+Making install in include
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/include'
+Making install in sound
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/include/sound'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/include/sound'
+make[7]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/include/alsa/sound'
+ /usr/bin/install -c -m 644 asound_fm.h hdsp.h hdspm.h sb16_csp.h sscape_ioctl.h emu10k1.h type_compat.h '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/include/alsa/sound'
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/include/sound'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/include/sound'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/include'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/include'
+make[7]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/include/alsa'
+ /usr/bin/install -c -m 644 asoundlib.h asoundef.h version.h global.h input.h output.h error.h conf.h control.h iatomic.h use-case.h control_external.h pcm.h pcm_old.h timer.h pcm_plugin.h pcm_rate.h pcm_external.h pcm_extplug.h pcm_ioplug.h rawmidi.h hwdep.h mixer.h mixer_abst.h seq_event.h seq.h seqmid.h seq_midi_event.h alisp.h '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/include/alsa'
+make  install-data-hook
+make[8]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/include'
+test -d /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/include/sys || mkdir -p /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/include/sys
+/usr/bin/install -c -m 644 ./sys.h /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/include/sys/asoundlib.h
+make[8]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/include'
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/include'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/include'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/include'
+Making install in src
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src'
+Making install in control
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/control'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/control'
+make[7]: Nothing to be done for 'install-exec-am'.
+make[7]: Nothing to be done for 'install-data-am'.
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/control'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/control'
+Making install in mixer
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/mixer'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/mixer'
+make[7]: Nothing to be done for 'install-exec-am'.
+make[7]: Nothing to be done for 'install-data-am'.
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/mixer'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/mixer'
+Making install in pcm
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/pcm'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/pcm'
+make[8]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/pcm'
+make[8]: Nothing to be done for 'install-exec-am'.
+make[8]: Nothing to be done for 'install-data-am'.
+make[8]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/pcm'
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/pcm'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/pcm'
+Making install in timer
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/timer'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/timer'
+make[7]: Nothing to be done for 'install-exec-am'.
+make[7]: Nothing to be done for 'install-data-am'.
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/timer'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/timer'
+Making install in rawmidi
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/rawmidi'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/rawmidi'
+make[7]: Nothing to be done for 'install-exec-am'.
+make[7]: Nothing to be done for 'install-data-am'.
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/rawmidi'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/rawmidi'
+Making install in hwdep
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/hwdep'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/hwdep'
+make[7]: Nothing to be done for 'install-exec-am'.
+make[7]: Nothing to be done for 'install-data-am'.
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/hwdep'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/hwdep'
+Making install in seq
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/seq'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/seq'
+make[7]: Nothing to be done for 'install-exec-am'.
+make[7]: Nothing to be done for 'install-data-am'.
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/seq'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/seq'
+Making install in ucm
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/ucm'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/ucm'
+make[7]: Nothing to be done for 'install-exec-am'.
+make[7]: Nothing to be done for 'install-data-am'.
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/ucm'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/ucm'
+Making install in alisp
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/alisp'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/alisp'
+make[7]: Nothing to be done for 'install-exec-am'.
+make[7]: Nothing to be done for 'install-data-am'.
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/alisp'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/alisp'
+Making install in compat
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/compat'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/compat'
+make[7]: Nothing to be done for 'install-exec-am'.
+make[7]: Nothing to be done for 'install-data-am'.
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/compat'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/compat'
+Making install in conf
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf'
+Making install in cards
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/cards'
+make[8]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/cards'
+make[8]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/share/alsa/cards/SI7018'
+ /usr/bin/install -c -m 644 SI7018/sndoc-mixer.alisp SI7018/sndop-mixer.alisp '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/share/alsa/cards/SI7018'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/share/alsa/cards'
+ /usr/bin/install -c -m 644 aliases.conf AACI.conf ATIIXP.conf ATIIXP-SPDMA.conf ATIIXP-MODEM.conf AU8810.conf AU8820.conf AU8830.conf Audigy.conf Audigy2.conf Aureon51.conf Aureon71.conf CA0106.conf CMI8338.conf CMI8338-SWIEC.conf CMI8738-MC6.conf CMI8738-MC8.conf CMI8788.conf CS46xx.conf Echo_Echo3G.conf EMU10K1.conf EMU10K1X.conf ENS1370.conf ENS1371.conf ES1968.conf FM801.conf FWSpeakers.conf FireWave.conf GUS.conf HDA-Intel.conf ICE1712.conf ICE1724.conf ICH.conf ICH4.conf ICH-MODEM.conf Maestro3.conf NFORCE.conf PC-Speaker.conf PMac.conf PMacToonie.conf '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/share/alsa/cards'
+ /usr/bin/install -c -m 644 PS3.conf RME9636.conf RME9652.conf SI7018.conf SB-XFi.conf TRID4DWAVENX.conf USB-Audio.conf YMF744.conf VIA686A.conf VIA8233.conf VIA8233A.conf VIA8237.conf VX222.conf VXPocket.conf VXPocket440.conf aliases.alisp '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/share/alsa/cards'
+make[8]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/cards'
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/cards'
+Making install in pcm
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/pcm'
+make[8]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/pcm'
+make[8]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/share/alsa/pcm'
+ /usr/bin/install -c -m 644 default.conf front.conf rear.conf center_lfe.conf side.conf surround40.conf surround41.conf surround50.conf surround51.conf surround71.conf iec958.conf hdmi.conf modem.conf dmix.conf dsnoop.conf dpl.conf '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/share/alsa/pcm'
+make[8]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/pcm'
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/pcm'
+Making install in alsa.conf.d
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/alsa.conf.d'
+make[8]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/alsa.conf.d'
+make[8]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/share/alsa/alsa.conf.d'
+ /usr/bin/install -c -m 644 README '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/share/alsa/alsa.conf.d'
+make[8]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/alsa.conf.d'
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/alsa.conf.d'
+Making install in ucm
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm'
+Making install in DAISY-I2S
+make[8]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/DAISY-I2S'
+make[9]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/DAISY-I2S'
+make[9]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/share/alsa/ucm/DAISY-I2S'
+ /usr/bin/install -c -m 644 DAISY-I2S.conf HiFi.conf '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/share/alsa/ucm/DAISY-I2S'
+make[9]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/DAISY-I2S'
+make[8]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/DAISY-I2S'
+Making install in PandaBoard
+make[8]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/PandaBoard'
+make[9]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/PandaBoard'
+make[9]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/share/alsa/ucm/PandaBoard'
+ /usr/bin/install -c -m 644 FMAnalog hifi hifiLP PandaBoard.conf record voice voiceCall '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/share/alsa/ucm/PandaBoard'
+make[9]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/PandaBoard'
+make[8]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/PandaBoard'
+Making install in PandaBoardES
+make[8]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/PandaBoardES'
+make[9]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/PandaBoardES'
+make[9]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/share/alsa/ucm/PandaBoardES'
+ /usr/bin/install -c -m 644 FMAnalog hifi hifiLP PandaBoardES.conf record voice voiceCall '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/share/alsa/ucm/PandaBoardES'
+make[9]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/PandaBoardES'
+make[8]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/PandaBoardES'
+Making install in SDP4430
+make[8]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/SDP4430'
+make[9]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/SDP4430'
+make[9]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/share/alsa/ucm/SDP4430'
+ /usr/bin/install -c -m 644 FMAnalog hifi hifiLP record SDP4430.conf voice voiceCall '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/share/alsa/ucm/SDP4430'
+make[9]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/SDP4430'
+make[8]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/SDP4430'
+Making install in tegraalc5632
+make[8]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/tegraalc5632'
+make[9]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/tegraalc5632'
+make[9]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/share/alsa/ucm/tegraalc5632'
+ /usr/bin/install -c -m 644 tegraalc5632.conf '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/share/alsa/ucm/tegraalc5632'
+make[9]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/tegraalc5632'
+make[8]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm/tegraalc5632'
+make[8]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm'
+make[9]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm'
+make[9]: Nothing to be done for 'install-exec-am'.
+make[9]: Nothing to be done for 'install-data-am'.
+make[9]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm'
+make[8]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm'
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf/ucm'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf'
+make[8]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf'
+make[8]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/share/alsa'
+ /usr/bin/install -c -m 644 alsa.conf sndo-mixer.alisp smixer.conf '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/share/alsa'
+make[8]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf'
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src/conf'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/lib'
+ /bin/bash ../libtool   --mode=install /usr/bin/install -c   libasound.la '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/lib'
+OpenWrt-libtool: install: /usr/bin/install -c .libs/libasound.so.2.0.0 /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/lib/libasound.so.2.0.0
+OpenWrt-libtool: install: (cd /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/lib && { ln -s -f libasound.so.2.0.0 libasound.so.2 || { rm -f libasound.so.2 && ln -s libasound.so.2.0.0 libasound.so.2; }; })
+OpenWrt-libtool: install: (cd /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/lib && { ln -s -f libasound.so.2.0.0 libasound.so || { rm -f libasound.so && ln -s libasound.so.2.0.0 libasound.so; }; })
+OpenWrt-libtool: install: /usr/bin/install -c .libs/libasound.lai /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/lib/libasound.la
+OpenWrt-libtool: install: warning: remember to run `libtool --finish /usr/lib'
+make[7]: Nothing to be done for 'install-data-am'.
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/src'
+Making install in modules
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules'
+Making install in mixer
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules/mixer'
+Making install in simple
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules/mixer/simple'
+make[8]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules/mixer/simple'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/lib/alsa-lib/smixer'
+ /bin/bash ../../../libtool   --mode=install /usr/bin/install -c   smixer-sbase.la smixer-ac97.la smixer-hda.la '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/lib/alsa-lib/smixer'
+OpenWrt-libtool: install: warning: relinking `smixer-sbase.la'
+OpenWrt-libtool: install: (cd /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules/mixer/simple; /bin/bash /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/libtool  --silent --tag CC --mode=relink rsdk-linux-gcc -g -O2 -W -Wall -Os -pipe -march=5281 -fno-caller-saves -fpic -D_GNU_SOURCE -module -avoid-version -Wl,--no-undefined -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib -o smixer-sbase.la -rpath /usr/lib/alsa-lib/smixer sbase.lo ../../../src/libasound.la -inst-prefix-dir /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install)
+OpenWrt-libtool: install: /usr/bin/install -c .libs/smixer-sbase.soT /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/lib/alsa-lib/smixer/smixer-sbase.so
+OpenWrt-libtool: install: /usr/bin/install -c .libs/smixer-sbase.lai /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/lib/alsa-lib/smixer/smixer-sbase.la
+OpenWrt-libtool: install: warning: relinking `smixer-ac97.la'
+OpenWrt-libtool: install: (cd /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules/mixer/simple; /bin/bash /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/libtool  --silent --tag CC --mode=relink rsdk-linux-gcc -g -O2 -W -Wall -Os -pipe -march=5281 -fno-caller-saves -fpic -D_GNU_SOURCE -module -avoid-version -Wl,--no-undefined -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib -o smixer-ac97.la -rpath /usr/lib/alsa-lib/smixer ac97.lo sbasedl.lo ../../../src/libasound.la -ldl -inst-prefix-dir /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install)
+OpenWrt-libtool: install: /usr/bin/install -c .libs/smixer-ac97.soT /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/lib/alsa-lib/smixer/smixer-ac97.so
+OpenWrt-libtool: install: /usr/bin/install -c .libs/smixer-ac97.lai /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/lib/alsa-lib/smixer/smixer-ac97.la
+OpenWrt-libtool: install: warning: relinking `smixer-hda.la'
+OpenWrt-libtool: install: (cd /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules/mixer/simple; /bin/bash /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/libtool  --silent --tag CC --mode=relink rsdk-linux-gcc -g -O2 -W -Wall -Os -pipe -march=5281 -fno-caller-saves -fpic -D_GNU_SOURCE -module -avoid-version -Wl,--no-undefined -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib -o smixer-hda.la -rpath /usr/lib/alsa-lib/smixer hda.lo sbasedl.lo ../../../src/libasound.la -ldl -inst-prefix-dir /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install)
+OpenWrt-libtool: install: /usr/bin/install -c .libs/smixer-hda.soT /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/lib/alsa-lib/smixer/smixer-hda.so
+OpenWrt-libtool: install: /usr/bin/install -c .libs/smixer-hda.lai /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/lib/alsa-lib/smixer/smixer-hda.la
+OpenWrt-libtool: install: warning: remember to run `libtool --finish /usr/lib/alsa-lib/smixer'
+make[8]: Nothing to be done for 'install-data-am'.
+make[8]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules/mixer/simple'
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules/mixer/simple'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules/mixer'
+make[8]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules/mixer'
+make[8]: Nothing to be done for 'install-exec-am'.
+make[8]: Nothing to be done for 'install-data-am'.
+make[8]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules/mixer'
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules/mixer'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules/mixer'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules'
+make[7]: Nothing to be done for 'install-exec-am'.
+make[7]: Nothing to be done for 'install-data-am'.
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/modules'
+Making install in aserver
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/aserver'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/aserver'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/bin'
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c aserver '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/bin'
+OpenWrt-libtool: install: warning: `../src/libasound.la' has not been installed in `/usr/lib'
+OpenWrt-libtool: install: /usr/bin/install -c .libs/aserver /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/bin/aserver
+make[6]: Nothing to be done for 'install-data-am'.
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/aserver'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/aserver'
+Making install in alsalisp
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/alsalisp'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/alsalisp'
+make[6]: Nothing to be done for 'install-exec-am'.
+make[6]: Nothing to be done for 'install-data-am'.
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/alsalisp'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/alsalisp'
+Making install in test
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/test'
+Making install in .
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/test'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/test'
+make[7]: Nothing to be done for 'install-exec-am'.
+make[7]: Nothing to be done for 'install-data-am'.
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/test'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/test'
+Making install in lsb
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/test/lsb'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/test/lsb'
+make[7]: Nothing to be done for 'install-exec-am'.
+make[7]: Nothing to be done for 'install-data-am'.
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/test/lsb'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/test/lsb'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/test'
+Making install in utils
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/utils'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/utils'
+make[6]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/share/aclocal'
+ /usr/bin/install -c -m 644 alsa.m4 '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/share/aclocal'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 alsa.pc '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-install/usr/lib/pkgconfig'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/utils'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/utils'
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2'
+make[6]: Nothing to be done for 'install-exec-am'.
+make[6]: Nothing to be done for 'install-data-am'.
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2'
+make[4]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2'
+rstrip.sh: /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-realtek/alsa-lib/usr/lib/libasound.so.2.0.0:shared object
+Packaged contents of /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-lib-1.0.27.2/ipkg-realtek/alsa-lib into /home/svm/openwrt_rtk/rtk_openwrt_sdk/bin/realtek/packages/packages/alsa-lib_1.0.27.2-1_realtek.ipk
+make[4]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/feeds/packages/libs/alsa-lib'
+rm -f /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/stamp/.alsa-lib_installed
+make[4]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/feeds/packages/libs/alsa-lib'

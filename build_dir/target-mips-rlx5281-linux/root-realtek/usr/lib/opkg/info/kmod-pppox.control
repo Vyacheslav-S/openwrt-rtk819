@@ -1,0 +1,10 @@
+Package: kmod-pppox
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-a7f84303e512c94837a166161dd231f8), kmod-ppp
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: realtek
+Installed-Size: 1585
+Description:  Kernel helper module for PPPoE and PPTP support

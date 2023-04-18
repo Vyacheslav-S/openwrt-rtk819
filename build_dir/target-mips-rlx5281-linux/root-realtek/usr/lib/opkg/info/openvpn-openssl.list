@@ -1,0 +1,9 @@
+/etc/openvpn.user
+/etc/config/openvpn
+/etc/hotplug.d/openvpn/01-user
+/etc/init.d/openvpn
+/lib/functions/openvpn.sh
+/usr/sbin/openvpn
+/usr/share/openvpn/openvpn.options
+/lib/upgrade/keep.d/openvpn
+/usr/libexec/openvpn-hotplug

@@ -1,0 +1,9 @@
+pkginclude_HEADERS += \
+	include/attributes.h \
+	include/error_context.h \
+	include/libattr.h \
+	include/xattr.h
+
+noinst_HEADERS += \
+	include/misc.h \
+	include/walk_tree.h

@@ -1,0 +1,591 @@
+--2023-04-18 19:07:41--  ftp://ftp.alsa-project.org/pub/utils/alsa-utils-1.0.28.tar.bz2
+           => '-'
+Resolving ftp.alsa-project.org (ftp.alsa-project.org)... 207.180.221.201
+Connecting to ftp.alsa-project.org (ftp.alsa-project.org)|207.180.221.201|:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /pub/utils ... done.
+==> SIZE alsa-utils-1.0.28.tar.bz2 ... 1146887
+==> PASV ... done.    ==> RETR alsa-utils-1.0.28.tar.bz2 ... done.
+Length: 1146887 (1.1M) (unauthoritative)
+
+     0K .......... .......... .......... .......... ..........  4%  213K 5s
+    50K .......... .......... .......... .......... ..........  8%  566K 3s
+   100K .......... .......... .......... .......... .......... 13% 3.86M 2s
+   150K .......... .......... .......... .......... .......... 17%  286K 2s
+   200K .......... .......... .......... .......... .......... 22% 60.1M 2s
+   250K .......... .......... .......... .......... .......... 26%  524M 1s
+   300K .......... .......... .......... .......... .......... 31%  477M 1s
+   350K .......... .......... .......... .......... .......... 35% 2.11M 1s
+   400K .......... .......... .......... .......... .......... 40%  248M 1s
+   450K .......... .......... .......... .......... .......... 44%  489M 1s
+   500K .......... .......... .......... .......... .......... 49%  653K 1s
+   550K .......... .......... .......... .......... .......... 53% 4.12M 1s
+   600K .......... .......... .......... .......... .......... 58%  455K 1s
+   650K .......... .......... .......... .......... .......... 62%  293M 0s
+   700K .......... .......... .......... .......... .......... 66%  421M 0s
+   750K .......... .......... .......... .......... .......... 71%  567M 0s
+   800K .......... .......... .......... .......... .......... 75%  550K 0s
+   850K .......... .......... .......... .......... .......... 80% 12.7M 0s
+   900K .......... .......... .......... .......... .......... 84%  534K 0s
+   950K .......... .......... .......... .......... .......... 89% 9.36M 0s
+  1000K .......... .......... .......... .......... .......... 93%  617K 0s
+  1050K .......... .......... .......... .......... .......... 98% 2.34M 0s
+  1100K .......... ..........                                 100% 15.0M=1.0s
+
+2023-04-18 19:07:43 (1.06 MB/s) - written to stdout [1146887]
+
+
+Applying ./patches/100-uClibc-compat.patch using plaintext: 
+patching file alsamixer/volume_mapping.c
+configure: WARNING: unrecognized options: --disable-ipv6
+configure: loading site script /home/svm/openwrt_rtk/rtk_openwrt_sdk/include/site/mips-rlx5281-linux
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for mips-rlx5281-linux-strip... rsdk-linux-strip
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking whether NLS is requested... no
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for style of include used by make... GNU
+checking for mips-rlx5281-linux-gcc... rsdk-linux-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... yes
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether rsdk-linux-gcc accepts -g... yes
+checking for rsdk-linux-gcc option to accept ISO C89... none needed
+checking dependency style of rsdk-linux-gcc... gcc3
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... mips-rlx5281-linux-gnu
+checking for ld used by GCC... rsdk-linux-ld
+checking if the linker (rsdk-linux-ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking how to run the C preprocessor... rsdk-linux-gcc -E
+checking for grep that handles long lines and -e... /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/bin/grep
+checking for egrep... /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/bin/grep -E
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking whether to use NLS... no
+checking for mips-rlx5281-linux-gcc... (cached) rsdk-linux-gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether rsdk-linux-gcc accepts -g... (cached) yes
+checking for rsdk-linux-gcc option to accept ISO C89... (cached) none needed
+checking dependency style of rsdk-linux-gcc... (cached) gcc3
+checking whether ln -s works... yes
+checking for a sed that does not truncate output... /home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/bin/sed
+checking pkg-config is at least version 0.9.0... yes
+checking for ALSA CFLAGS... 
+checking for ALSA LDFLAGS...  -lasound -lm -ldl -lpthread
+checking for alsa/pcm.h... yes
+checking for alsa/mixer.h... yes
+checking for alsa/rawmidi.h... yes
+checking for alsa/seq.h... yes
+checking for samplerate.h... no
+checking for librt... checking for clock_gettime in -lrt... yes
+Package udev was not found in the pkg-config search path.
+Perhaps you should add the directory containing `udev.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'udev' found
+checking for ANSI C header files... yes
+checking for NCURSES... no
+checking for ncurses5-config... (cached) no
+checking for initscr in -lncurses... yes
+checking for curses library... ncurses
+checking for curses header name... <ncurses.h>
+checking for curses compiler flags... 
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking panel.h usability... yes
+checking panel.h presence... yes
+checking for panel.h... yes
+checking menu.h usability... yes
+checking menu.h presence... yes
+checking for menu.h... yes
+checking form.h usability... yes
+checking form.h presence... yes
+checking for form.h... yes
+checking for new_panel in -lpanel... yes
+checking for new_menu in -lmenu... yes
+checking for new_form in -lform... yes
+checking for curses linker flags... -lform -lmenu -lpanel -lncurses
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking whether time.h and sys/time.h may both be included... yes
+checking whether rsdk-linux-gcc needs -traditional... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... 64
+Package systemd was not found in the pkg-config search path.
+Perhaps you should add the directory containing `systemd.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'systemd' found
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating alsactl/Makefile
+config.status: creating alsactl/init/Makefile
+config.status: creating alsamixer/Makefile
+config.status: creating amidi/Makefile
+config.status: creating amixer/Makefile
+config.status: creating m4/Makefile
+config.status: creating po/Makefile.in
+config.status: creating alsaconf/alsaconf
+config.status: creating alsaconf/Makefile
+config.status: creating alsaconf/po/Makefile
+config.status: WARNING:  'alsaconf/po/Makefile.in' seems to ignore the --datarootdir setting
+config.status: creating alsaucm/Makefile
+config.status: creating aplay/Makefile
+config.status: creating include/Makefile
+config.status: creating iecset/Makefile
+config.status: creating utils/Makefile
+config.status: creating utils/alsa-utils.spec
+config.status: creating seq/Makefile
+config.status: creating seq/aconnect/Makefile
+config.status: creating seq/aplaymidi/Makefile
+config.status: creating seq/aseqdump/Makefile
+config.status: creating seq/aseqnet/Makefile
+config.status: creating speaker-test/Makefile
+config.status: creating speaker-test/samples/Makefile
+config.status: creating alsaloop/Makefile
+config.status: creating include/aconfig.h
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+config.status: executing depfiles commands
+configure: WARNING: unrecognized options: --disable-ipv6
+make[4]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28'
+Making all in include
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/include'
+make  all-am
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/include'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/include'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/include'
+Making all in alsactl
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsactl'
+Making all in init
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsactl/init'
+make[6]: Nothing to be done for 'all'.
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsactl/init'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsactl'
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include   -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include   -D__USE_GNU -DSYS_ASOUNDRC=\"/var/lib/alsa/asound.state\" -DSYS_LOCKFILE=\"/var/lock/asound.state.lock\" -DSYS_PIDFILE=\"/var/run/alsactl.pid\" -Os -pipe -march=5281 -fno-caller-saves  -MT alsactl-alsactl.o -MD -MP -MF .deps/alsactl-alsactl.Tpo -c -o alsactl-alsactl.o `test -f 'alsactl.c' || echo './'`alsactl.c
+mv -f .deps/alsactl-alsactl.Tpo .deps/alsactl-alsactl.Po
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include   -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include   -D__USE_GNU -DSYS_ASOUNDRC=\"/var/lib/alsa/asound.state\" -DSYS_LOCKFILE=\"/var/lock/asound.state.lock\" -DSYS_PIDFILE=\"/var/run/alsactl.pid\" -Os -pipe -march=5281 -fno-caller-saves  -MT alsactl-state.o -MD -MP -MF .deps/alsactl-state.Tpo -c -o alsactl-state.o `test -f 'state.c' || echo './'`state.c
+mv -f .deps/alsactl-state.Tpo .deps/alsactl-state.Po
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include   -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include   -D__USE_GNU -DSYS_ASOUNDRC=\"/var/lib/alsa/asound.state\" -DSYS_LOCKFILE=\"/var/lock/asound.state.lock\" -DSYS_PIDFILE=\"/var/run/alsactl.pid\" -Os -pipe -march=5281 -fno-caller-saves  -MT alsactl-lock.o -MD -MP -MF .deps/alsactl-lock.Tpo -c -o alsactl-lock.o `test -f 'lock.c' || echo './'`lock.c
+mv -f .deps/alsactl-lock.Tpo .deps/alsactl-lock.Po
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include   -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include   -D__USE_GNU -DSYS_ASOUNDRC=\"/var/lib/alsa/asound.state\" -DSYS_LOCKFILE=\"/var/lock/asound.state.lock\" -DSYS_PIDFILE=\"/var/run/alsactl.pid\" -Os -pipe -march=5281 -fno-caller-saves  -MT alsactl-utils.o -MD -MP -MF .deps/alsactl-utils.Tpo -c -o alsactl-utils.o `test -f 'utils.c' || echo './'`utils.c
+mv -f .deps/alsactl-utils.Tpo .deps/alsactl-utils.Po
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include   -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include   -D__USE_GNU -DSYS_ASOUNDRC=\"/var/lib/alsa/asound.state\" -DSYS_LOCKFILE=\"/var/lock/asound.state.lock\" -DSYS_PIDFILE=\"/var/run/alsactl.pid\" -Os -pipe -march=5281 -fno-caller-saves  -MT alsactl-init_parse.o -MD -MP -MF .deps/alsactl-init_parse.Tpo -c -o alsactl-init_parse.o `test -f 'init_parse.c' || echo './'`init_parse.c
+mv -f .deps/alsactl-init_parse.Tpo .deps/alsactl-init_parse.Po
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include   -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include   -D__USE_GNU -DSYS_ASOUNDRC=\"/var/lib/alsa/asound.state\" -DSYS_LOCKFILE=\"/var/lock/asound.state.lock\" -DSYS_PIDFILE=\"/var/run/alsactl.pid\" -Os -pipe -march=5281 -fno-caller-saves  -MT alsactl-daemon.o -MD -MP -MF .deps/alsactl-daemon.Tpo -c -o alsactl-daemon.o `test -f 'daemon.c' || echo './'`daemon.c
+mv -f .deps/alsactl-daemon.Tpo .deps/alsactl-daemon.Po
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include   -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include   -D__USE_GNU -DSYS_ASOUNDRC=\"/var/lib/alsa/asound.state\" -DSYS_LOCKFILE=\"/var/lock/asound.state.lock\" -DSYS_PIDFILE=\"/var/run/alsactl.pid\" -Os -pipe -march=5281 -fno-caller-saves  -MT alsactl-monitor.o -MD -MP -MF .deps/alsactl-monitor.Tpo -c -o alsactl-monitor.o `test -f 'monitor.c' || echo './'`monitor.c
+mv -f .deps/alsactl-monitor.Tpo .deps/alsactl-monitor.Po
+rsdk-linux-gcc  -D__USE_GNU -DSYS_ASOUNDRC=\"/var/lib/alsa/asound.state\" -DSYS_LOCKFILE=\"/var/lock/asound.state.lock\" -DSYS_PIDFILE=\"/var/run/alsactl.pid\" -Os -pipe -march=5281 -fno-caller-saves   -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib  -o alsactl alsactl-alsactl.o alsactl-state.o alsactl-lock.o alsactl-utils.o alsactl-init_parse.o alsactl-daemon.o alsactl-monitor.o  -lasound -lm -ldl -lpthread
+/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/host/bin/sed -r -e 's,@sbindir\@,/usr/sbin,g' -e 's,@mydatadir\@,/usr/share/alsa,g' -e 's,@daemonswitch\@,/etc/alsa/state-daemon.conf,g' < 90-alsa-restore.rules.in > 90-alsa-restore.rules || rm 90-alsa-restore.rules
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsactl'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsactl'
+Making all in alsaucm
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaucm'
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -Wall -I../include -I../../alsa-lib/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include   -Os -pipe -march=5281 -fno-caller-saves  -MT usecase.o -MD -MP -MF .deps/usecase.Tpo -c -o usecase.o usecase.c
+mv -f .deps/usecase.Tpo .deps/usecase.Po
+rsdk-linux-gcc  -Os -pipe -march=5281 -fno-caller-saves   -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib  -o alsaucm usecase.o -lasound -L../../alsa-lib/src/.libs -lasound -lm -ldl -lpthread
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaucm'
+Making all in utils
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/utils'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/utils'
+Making all in m4
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/m4'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/m4'
+Making all in po
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/po'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/po'
+Making all in alsamixer
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsamixer'
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include  -DCURSESINC="<ncurses.h>" -Os -pipe -march=5281 -fno-caller-saves  -MT alsamixer-card_select.o -MD -MP -MF .deps/alsamixer-card_select.Tpo -c -o alsamixer-card_select.o `test -f 'card_select.c' || echo './'`card_select.c
+mv -f .deps/alsamixer-card_select.Tpo .deps/alsamixer-card_select.Po
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include  -DCURSESINC="<ncurses.h>" -Os -pipe -march=5281 -fno-caller-saves  -MT alsamixer-cli.o -MD -MP -MF .deps/alsamixer-cli.Tpo -c -o alsamixer-cli.o `test -f 'cli.c' || echo './'`cli.c
+mv -f .deps/alsamixer-cli.Tpo .deps/alsamixer-cli.Po
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include  -DCURSESINC="<ncurses.h>" -Os -pipe -march=5281 -fno-caller-saves  -MT alsamixer-colors.o -MD -MP -MF .deps/alsamixer-colors.Tpo -c -o alsamixer-colors.o `test -f 'colors.c' || echo './'`colors.c
+mv -f .deps/alsamixer-colors.Tpo .deps/alsamixer-colors.Po
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include  -DCURSESINC="<ncurses.h>" -Os -pipe -march=5281 -fno-caller-saves  -MT alsamixer-device_name.o -MD -MP -MF .deps/alsamixer-device_name.Tpo -c -o alsamixer-device_name.o `test -f 'device_name.c' || echo './'`device_name.c
+mv -f .deps/alsamixer-device_name.Tpo .deps/alsamixer-device_name.Po
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include  -DCURSESINC="<ncurses.h>" -Os -pipe -march=5281 -fno-caller-saves  -MT alsamixer-die.o -MD -MP -MF .deps/alsamixer-die.Tpo -c -o alsamixer-die.o `test -f 'die.c' || echo './'`die.c
+mv -f .deps/alsamixer-die.Tpo .deps/alsamixer-die.Po
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include  -DCURSESINC="<ncurses.h>" -Os -pipe -march=5281 -fno-caller-saves  -MT alsamixer-mainloop.o -MD -MP -MF .deps/alsamixer-mainloop.Tpo -c -o alsamixer-mainloop.o `test -f 'mainloop.c' || echo './'`mainloop.c
+mv -f .deps/alsamixer-mainloop.Tpo .deps/alsamixer-mainloop.Po
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include  -DCURSESINC="<ncurses.h>" -Os -pipe -march=5281 -fno-caller-saves  -MT alsamixer-mem.o -MD -MP -MF .deps/alsamixer-mem.Tpo -c -o alsamixer-mem.o `test -f 'mem.c' || echo './'`mem.c
+mv -f .deps/alsamixer-mem.Tpo .deps/alsamixer-mem.Po
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include  -DCURSESINC="<ncurses.h>" -Os -pipe -march=5281 -fno-caller-saves  -MT alsamixer-mixer_controls.o -MD -MP -MF .deps/alsamixer-mixer_controls.Tpo -c -o alsamixer-mixer_controls.o `test -f 'mixer_controls.c' || echo './'`mixer_controls.c
+mv -f .deps/alsamixer-mixer_controls.Tpo .deps/alsamixer-mixer_controls.Po
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include  -DCURSESINC="<ncurses.h>" -Os -pipe -march=5281 -fno-caller-saves  -MT alsamixer-mixer_display.o -MD -MP -MF .deps/alsamixer-mixer_display.Tpo -c -o alsamixer-mixer_display.o `test -f 'mixer_display.c' || echo './'`mixer_display.c
+mv -f .deps/alsamixer-mixer_display.Tpo .deps/alsamixer-mixer_display.Po
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include  -DCURSESINC="<ncurses.h>" -Os -pipe -march=5281 -fno-caller-saves  -MT alsamixer-mixer_widget.o -MD -MP -MF .deps/alsamixer-mixer_widget.Tpo -c -o alsamixer-mixer_widget.o `test -f 'mixer_widget.c' || echo './'`mixer_widget.c
+mv -f .deps/alsamixer-mixer_widget.Tpo .deps/alsamixer-mixer_widget.Po
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include  -DCURSESINC="<ncurses.h>" -Os -pipe -march=5281 -fno-caller-saves  -MT alsamixer-proc_files.o -MD -MP -MF .deps/alsamixer-proc_files.Tpo -c -o alsamixer-proc_files.o `test -f 'proc_files.c' || echo './'`proc_files.c
+mv -f .deps/alsamixer-proc_files.Tpo .deps/alsamixer-proc_files.Po
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include  -DCURSESINC="<ncurses.h>" -Os -pipe -march=5281 -fno-caller-saves  -MT alsamixer-textbox.o -MD -MP -MF .deps/alsamixer-textbox.Tpo -c -o alsamixer-textbox.o `test -f 'textbox.c' || echo './'`textbox.c
+mv -f .deps/alsamixer-textbox.Tpo .deps/alsamixer-textbox.Po
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include  -DCURSESINC="<ncurses.h>" -Os -pipe -march=5281 -fno-caller-saves  -MT alsamixer-utils.o -MD -MP -MF .deps/alsamixer-utils.Tpo -c -o alsamixer-utils.o `test -f 'utils.c' || echo './'`utils.c
+mv -f .deps/alsamixer-utils.Tpo .deps/alsamixer-utils.Po
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include  -DCURSESINC="<ncurses.h>" -Os -pipe -march=5281 -fno-caller-saves  -MT alsamixer-volume_mapping.o -MD -MP -MF .deps/alsamixer-volume_mapping.Tpo -c -o alsamixer-volume_mapping.o `test -f 'volume_mapping.c' || echo './'`volume_mapping.c
+mv -f .deps/alsamixer-volume_mapping.Tpo .deps/alsamixer-volume_mapping.Po
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include  -DCURSESINC="<ncurses.h>" -Os -pipe -march=5281 -fno-caller-saves  -MT alsamixer-widget.o -MD -MP -MF .deps/alsamixer-widget.Tpo -c -o alsamixer-widget.o `test -f 'widget.c' || echo './'`widget.c
+widget.c: In function 'get_active_widget':
+widget.c:121:3: warning: return discards 'const' qualifier from pointer target type [enabled by default]
+widget.c: In function 'window_size_changed':
+widget.c:137:10: warning: assignment discards 'const' qualifier from pointer target type [enabled by default]
+mv -f .deps/alsamixer-widget.Tpo .deps/alsamixer-widget.Po
+rsdk-linux-gcc -DCURSESINC="<ncurses.h>" -Os -pipe -march=5281 -fno-caller-saves   -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib  -o alsamixer alsamixer-card_select.o alsamixer-cli.o alsamixer-colors.o alsamixer-device_name.o alsamixer-die.o alsamixer-mainloop.o alsamixer-mem.o alsamixer-mixer_controls.o alsamixer-mixer_display.o alsamixer-mixer_widget.o alsamixer-proc_files.o alsamixer-textbox.o alsamixer-utils.o alsamixer-volume_mapping.o alsamixer-widget.o -lform -lmenu -lpanel -lncurses -lasound -lm -ldl -lpthread
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsamixer'
+Making all in amixer
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/amixer'
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include   -Os -pipe -march=5281 -fno-caller-saves  -MT amixer.o -MD -MP -MF .deps/amixer.Tpo -c -o amixer.o amixer.c
+mv -f .deps/amixer.Tpo .deps/amixer.Po
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include   -Os -pipe -march=5281 -fno-caller-saves  -MT volume_mapping.o -MD -MP -MF .deps/volume_mapping.Tpo -c -o volume_mapping.o `test -f '../alsamixer/volume_mapping.c' || echo './'`../alsamixer/volume_mapping.c
+mv -f .deps/volume_mapping.Tpo .deps/volume_mapping.Po
+rsdk-linux-gcc  -Os -pipe -march=5281 -fno-caller-saves   -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib  -o amixer amixer.o volume_mapping.o -lm -lasound -lm -ldl -lpthread
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/amixer'
+Making all in amidi
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/amidi'
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include   -Os -pipe -march=5281 -fno-caller-saves  -MT amidi.o -MD -MP -MF .deps/amidi.Tpo -c -o amidi.o amidi.c
+mv -f .deps/amidi.Tpo .deps/amidi.Po
+rsdk-linux-gcc  -Os -pipe -march=5281 -fno-caller-saves   -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib  -o amidi amidi.o  -lasound -lm -ldl -lpthread
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/amidi'
+Making all in alsaconf
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaconf'
+Making all in po
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaconf/po'
+make[6]: Nothing to be done for 'all'.
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaconf/po'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaconf'
+make[6]: Nothing to be done for 'all-am'.
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaconf'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaconf'
+Making all in aplay
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/aplay'
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include   -Os -pipe -march=5281 -fno-caller-saves  -MT aplay.o -MD -MP -MF .deps/aplay.Tpo -c -o aplay.o aplay.c
+mv -f .deps/aplay.Tpo .deps/aplay.Po
+rsdk-linux-gcc  -Os -pipe -march=5281 -fno-caller-saves   -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib  -o aplay aplay.o  -lrt -lasound -lm -ldl -lpthread
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/aplay'
+Making all in iecset
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/iecset'
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include   -Os -pipe -march=5281 -fno-caller-saves  -MT iecset.o -MD -MP -MF .deps/iecset.Tpo -c -o iecset.o iecset.c
+mv -f .deps/iecset.Tpo .deps/iecset.Po
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include   -Os -pipe -march=5281 -fno-caller-saves  -MT iecbits.o -MD -MP -MF .deps/iecbits.Tpo -c -o iecbits.o iecbits.c
+mv -f .deps/iecbits.Tpo .deps/iecbits.Po
+rsdk-linux-gcc  -Os -pipe -march=5281 -fno-caller-saves   -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib  -o iecset iecset.o iecbits.o -lm -lasound -lm -ldl -lpthread
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/iecset'
+Making all in speaker-test
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/speaker-test'
+Making all in samples
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/speaker-test/samples'
+make[6]: Nothing to be done for 'all'.
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/speaker-test/samples'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/speaker-test'
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include   -Os -pipe -march=5281 -fno-caller-saves  -MT speaker-test.o -MD -MP -MF .deps/speaker-test.Tpo -c -o speaker-test.o speaker-test.c
+mv -f .deps/speaker-test.Tpo .deps/speaker-test.Po
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include   -Os -pipe -march=5281 -fno-caller-saves  -MT pink.o -MD -MP -MF .deps/pink.Tpo -c -o pink.o pink.c
+mv -f .deps/pink.Tpo .deps/pink.Po
+rsdk-linux-gcc  -Os -pipe -march=5281 -fno-caller-saves   -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib  -o speaker-test speaker-test.o pink.o  -lm -lasound -lm -ldl -lpthread
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/speaker-test'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/speaker-test'
+Making all in alsaloop
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaloop'
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include  -D_GNU_SOURCE -Os -pipe -march=5281 -fno-caller-saves  -MT alsaloop.o -MD -MP -MF .deps/alsaloop.Tpo -c -o alsaloop.o alsaloop.c
+mv -f .deps/alsaloop.Tpo .deps/alsaloop.Po
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include  -D_GNU_SOURCE -Os -pipe -march=5281 -fno-caller-saves  -MT pcmjob.o -MD -MP -MF .deps/pcmjob.Tpo -c -o pcmjob.o pcmjob.c
+mv -f .deps/pcmjob.Tpo .deps/pcmjob.Po
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include  -D_GNU_SOURCE -Os -pipe -march=5281 -fno-caller-saves  -MT control.o -MD -MP -MF .deps/control.Tpo -c -o control.o control.c
+mv -f .deps/control.Tpo .deps/control.Po
+rsdk-linux-gcc -D_GNU_SOURCE -Os -pipe -march=5281 -fno-caller-saves   -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib  -o alsaloop alsaloop.o pcmjob.o control.o -lm  -lasound -lm -ldl -lpthread
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaloop'
+Making all in seq
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq'
+Making all in aconnect
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq/aconnect'
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include   -Os -pipe -march=5281 -fno-caller-saves  -MT aconnect.o -MD -MP -MF .deps/aconnect.Tpo -c -o aconnect.o aconnect.c
+mv -f .deps/aconnect.Tpo .deps/aconnect.Po
+rsdk-linux-gcc  -Os -pipe -march=5281 -fno-caller-saves   -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib  -o aconnect aconnect.o  -lasound -lm -ldl -lpthread
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq/aconnect'
+Making all in aplaymidi
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq/aplaymidi'
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include   -Os -pipe -march=5281 -fno-caller-saves  -MT aplaymidi.o -MD -MP -MF .deps/aplaymidi.Tpo -c -o aplaymidi.o aplaymidi.c
+mv -f .deps/aplaymidi.Tpo .deps/aplaymidi.Po
+rsdk-linux-gcc  -Os -pipe -march=5281 -fno-caller-saves   -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib  -o aplaymidi aplaymidi.o  -lasound -lm -ldl -lpthread
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include   -Os -pipe -march=5281 -fno-caller-saves  -MT arecordmidi.o -MD -MP -MF .deps/arecordmidi.Tpo -c -o arecordmidi.o arecordmidi.c
+mv -f .deps/arecordmidi.Tpo .deps/arecordmidi.Po
+rsdk-linux-gcc  -Os -pipe -march=5281 -fno-caller-saves   -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib  -o arecordmidi arecordmidi.o  -lasound -lm -ldl -lpthread
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq/aplaymidi'
+Making all in aseqdump
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq/aseqdump'
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include   -Os -pipe -march=5281 -fno-caller-saves  -MT aseqdump.o -MD -MP -MF .deps/aseqdump.Tpo -c -o aseqdump.o aseqdump.c
+mv -f .deps/aseqdump.Tpo .deps/aseqdump.Po
+rsdk-linux-gcc  -Os -pipe -march=5281 -fno-caller-saves   -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib  -o aseqdump aseqdump.o  -lasound -lm -ldl -lpthread
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq/aseqdump'
+Making all in aseqnet
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq/aseqnet'
+rsdk-linux-gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/include -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include   -Os -pipe -march=5281 -fno-caller-saves  -MT aseqnet.o -MD -MP -MF .deps/aseqnet.Tpo -c -o aseqnet.o aseqnet.c
+mv -f .deps/aseqnet.Tpo .deps/aseqnet.Po
+rsdk-linux-gcc  -Os -pipe -march=5281 -fno-caller-saves   -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/usr/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/target-mips-rlx5281-linux/lib -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib  -o aseqnet aseqnet.o  -lasound -lm -ldl -lpthread
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq/aseqnet'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq'
+make[6]: Nothing to be done for 'all-am'.
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq'
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28'
+make[5]: Nothing to be done for 'all-am'.
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28'
+make[4]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28'
+make[4]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28'
+Making install in include
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/include'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/include'
+make[6]: Nothing to be done for 'install-exec-am'.
+make[6]: Nothing to be done for 'install-data-am'.
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/include'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/include'
+Making install in alsactl
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsactl'
+Making install in init
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsactl/init'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsactl/init'
+make[7]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/share/alsa/init'
+ /usr/bin/install -c -m 644 00main default help info test hda ca0106 '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/share/alsa/init'
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsactl/init'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsactl/init'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsactl'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsactl'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/sbin'
+  /usr/bin/install -c alsactl '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/sbin'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1'
+ /usr/bin/install -c -m 644 alsactl.1 '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man7'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/lib/udev/rules.d'
+ /usr/bin/install -c -m 644 90-alsa-restore.rules '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/lib/udev/rules.d'
+make  install-data-hook
+make[8]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsactl'
+make[8]: Nothing to be done for 'install-data-hook'.
+make[8]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsactl'
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsactl'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsactl'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsactl'
+Making install in alsaucm
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaucm'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaucm'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin'
+  /usr/bin/install -c alsaucm '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin'
+make[6]: Nothing to be done for 'install-data-am'.
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaucm'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaucm'
+Making install in utils
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/utils'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/utils'
+make[6]: Nothing to be done for 'install-exec-am'.
+make[6]: Nothing to be done for 'install-data-am'.
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/utils'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/utils'
+Making install in m4
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/m4'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/m4'
+make[6]: Nothing to be done for 'install-exec-am'.
+make[6]: Nothing to be done for 'install-data-am'.
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/m4'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/m4'
+Making install in po
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/po'
+if test "alsa-utils" = "gettext-tools"; then \
+  /bin/mkdir -p /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/po'
+Making install in alsamixer
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsamixer'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsamixer'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin'
+  /usr/bin/install -c alsamixer '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1'
+ /usr/bin/install -c -m 644 alsamixer.1 '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsamixer'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsamixer'
+Making install in amixer
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/amixer'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/amixer'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin'
+  /usr/bin/install -c amixer '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1'
+ /usr/bin/install -c -m 644 amixer.1 '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/amixer'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/amixer'
+Making install in amidi
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/amidi'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/amidi'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin'
+  /usr/bin/install -c amidi '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1'
+ /usr/bin/install -c -m 644 amidi.1 '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/amidi'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/amidi'
+Making install in alsaconf
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaconf'
+Making install in po
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaconf/po'
+make[6]: Nothing to be done for 'install'.
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaconf/po'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaconf'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaconf'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/sbin'
+ /usr/bin/install -c alsaconf '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/sbin'
+ /usr/bin/install -c -m 644 alsaconf.8 /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man8/alsaconf.8
+ /usr/bin/install -c -m 644 alsaconf.fr.8 /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/fr/man8/alsaconf.8
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaconf'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaconf'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaconf'
+Making install in aplay
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/aplay'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/aplay'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin'
+  /usr/bin/install -c aplay '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin'
+make  install-exec-hook
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/aplay'
+rm -f arecord
+ln -s aplay arecord
+rm -f /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin/arecord
+(cd /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin && ln -s aplay arecord)
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/aplay'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1'
+ /usr/bin/install -c -m 644 aplay.1 arecord.1 '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1'
+make  install-data-hook
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/aplay'
+rm -f /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1/arecord.1
+(cd /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1 && ln -s aplay.1 arecord.1)
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/aplay'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/aplay'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/aplay'
+Making install in iecset
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/iecset'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/iecset'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin'
+  /usr/bin/install -c iecset '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1'
+ /usr/bin/install -c -m 644 iecset.1 '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/iecset'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/iecset'
+Making install in speaker-test
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/speaker-test'
+Making install in samples
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/speaker-test/samples'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/speaker-test/samples'
+make[7]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/share/alsa/speaker-test'
+ /usr/bin/install -c -m 644 sample_map.csv '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/share/alsa/speaker-test'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/share/sounds/alsa'
+ /usr/bin/install -c -m 644 Front_Left.wav Rear_Center.wav Rear_Right.wav Side_Right.wav Front_Center.wav Front_Right.wav Noise.wav Rear_Left.wav Side_Left.wav '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/share/sounds/alsa'
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/speaker-test/samples'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/speaker-test/samples'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/speaker-test'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/speaker-test'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin'
+  /usr/bin/install -c speaker-test '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1'
+ /usr/bin/install -c -m 644 speaker-test.1 '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1'
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/speaker-test'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/speaker-test'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/speaker-test'
+Making install in alsaloop
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaloop'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaloop'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin'
+  /usr/bin/install -c alsaloop '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1'
+ /usr/bin/install -c -m 644 alsaloop.1 '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaloop'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/alsaloop'
+Making install in seq
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq'
+Making install in aconnect
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq/aconnect'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq/aconnect'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin'
+  /usr/bin/install -c aconnect '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1'
+ /usr/bin/install -c -m 644 aconnect.1 '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1'
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq/aconnect'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq/aconnect'
+Making install in aplaymidi
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq/aplaymidi'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq/aplaymidi'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin'
+  /usr/bin/install -c aplaymidi arecordmidi '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1'
+ /usr/bin/install -c -m 644 aplaymidi.1 arecordmidi.1 '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1'
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq/aplaymidi'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq/aplaymidi'
+Making install in aseqdump
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq/aseqdump'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq/aseqdump'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin'
+  /usr/bin/install -c aseqdump '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1'
+ /usr/bin/install -c -m 644 aseqdump.1 '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1'
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq/aseqdump'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq/aseqdump'
+Making install in aseqnet
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq/aseqnet'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq/aseqnet'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin'
+  /usr/bin/install -c aseqnet '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/bin'
+ /bin/mkdir -p '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1'
+ /usr/bin/install -c -m 644 aseqnet.1 '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/usr/man/man1'
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq/aseqnet'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq/aseqnet'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq'
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq'
+make[7]: Nothing to be done for 'install-exec-am'.
+make[7]: Nothing to be done for 'install-data-am'.
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/seq'
+make[5]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28'
+make[6]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28'
+make[6]: Nothing to be done for 'install-exec-am'.
+make  install-data-hook
+make[7]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28'
+/bin/mkdir -p -m 0755 /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-install/var/lib/alsa
+make[7]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28'
+make[6]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28'
+make[5]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28'
+make[4]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28'
+rstrip.sh: /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-realtek/alsa-utils/usr/bin/alsamixer:executable
+rstrip.sh: /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-realtek/alsa-utils/usr/bin/aplay:executable
+rstrip.sh: /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-realtek/alsa-utils/usr/bin/arecord:executable
+rstrip.sh: /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-realtek/alsa-utils/usr/bin/amixer:executable
+rstrip.sh: /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-realtek/alsa-utils/usr/sbin/alsactl:executable
+Packaged contents of /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/alsa-utils-1.0.28/ipkg-realtek/alsa-utils into /home/svm/openwrt_rtk/rtk_openwrt_sdk/bin/realtek/packages/packages/alsa-utils_1.0.28-2_realtek.ipk
+WARNING: skipping alsa-utils-seq -- package not selected
+WARNING: skipping alsa-utils-tests -- package not selected

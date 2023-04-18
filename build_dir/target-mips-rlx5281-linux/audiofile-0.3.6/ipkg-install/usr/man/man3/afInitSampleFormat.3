@@ -1,0 +1,161 @@
+'\" t
+.\"     Title: afInitSampleFormat
+.\"    Author: [see the "AUTHOR" section]
+.\" Generator: DocBook XSL Stylesheets v1.76.1 <http://docbook.sf.net/>
+.\"      Date: 03/06/2013
+.\"    Manual: \ \&
+.\"    Source: Audio File Library 0.3.6
+.\"  Language: English
+.\"
+.TH "AFINITSAMPLEFORMAT" "3" "03/06/2013" "Audio File Library 0\&.3\&.6" "\ \&"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+afInitSampleFormat, afInitByteOrder, afInitChannels, afInitRate \- initialize audio data format for a track in an audio file setup
+.SH "SYNOPSIS"
+.sp
+.nf
+#include <audiofile\&.h>
+.fi
+.sp
+.nf
+void afInitSampleFormat(AFfilesetup setup, int track, int sampleFormat,
+    int sampleWidth);
+void afInitByteOrder(AFfilesetup setup, int track, int byteOrder);
+void afInitChannels(AFfilesetup setup, int track, int channels);
+void afInitRate(AFfilesetup setup, int track, double rate);
+.fi
+.SH "PARAMETERS"
+.sp
+setup is a valid file setup returned by \fBafNewFileSetup\fR(3)\&.
+.sp
+track specifies a track within the audio file setup\&. track is always AF_DEFAULT_TRACK for all currently supported file formats\&.
+.sp
+sampleFormat is a symbolic constant specifying the sample format for the audio data in the track\&. sampleFormat must be one of AF_SAMPFMT_TWOSCOMP, AF_SAMPFMT_UNSIGNED, AF_SAMPFMT_FLOAT, or AF_SAMPFMT_DOUBLE\&.
+.sp
+sampleWidth is a positive integer specifying the number of bits for each sample in the track\&.
+.sp
+byteOrder is a symbolic constant specifying the byte order of the track\&. byteOrder must be one of AF_BYTEORDER_BIGENDIAN or AF_BYTEORDER_LITTLEENDIAN\&.
+.sp
+channels is a positive integer specifying the number of channels in the track\&.
+.sp
+rate is a positive double\-precision floating\-point number specifying the sample rate of the track\&.
+.SH "DESCRIPTION"
+.sp
+afInitSampleFormat initializes the track to the specified sample format and sample width\&.
+.sp
+afInitByteOrder initializes the track to the specified byte order\&.
+.sp
+afInitChannels initializes the track to the specified number of channels\&.
+.sp
+afInitRate initializes the track to the specified sample rate\&.
+.SH "ERRORS"
+.sp
+afInitSampleFormat, afInitByteOrder, afInitChannels, and afInitRate can produce the following errors:
+.TS
+tab(:);
+lt lt
+lt lt.
+T{
+.sp
+AF_BAD_FILESETUP
+T}:T{
+.sp
+setup represents an invalid file setup\&.
+T}
+T{
+.sp
+AF_BAD_TRACK
+T}:T{
+.sp
+track represents an invalid track identifier\&.
+T}
+.TE
+.sp 1
+.sp
+afInitSampleFormat can also produce the following errors:
+.TS
+tab(:);
+lt lt
+lt lt.
+T{
+.sp
+AF_BAD_SAMPFMT
+T}:T{
+.sp
+sampleFormat does not represent a valid sample format\&.
+T}
+T{
+.sp
+AF_BAD_WIDTH
+T}:T{
+.sp
+sampleWidth is not a valid sample width\&.
+T}
+.TE
+.sp 1
+.sp
+afInitByteOrder can also produce the following error:
+.TS
+tab(:);
+lt lt.
+T{
+.sp
+AF_BAD_BYTEORDER
+T}:T{
+.sp
+byteOrder does not represent a valid byte order\&.
+T}
+.TE
+.sp 1
+.sp
+afInitChannels can also produce the following error:
+.TS
+tab(:);
+lt lt.
+T{
+.sp
+AF_BAD_CHANNELS
+T}:T{
+.sp
+channels specifies an invalid number of channels\&.
+T}
+.TE
+.sp 1
+.sp
+afInitRate can also produce the following error:
+.TS
+tab(:);
+lt lt.
+T{
+.sp
+AF_BAD_RATE
+T}:T{
+.sp
+rate specifies an invalid sample rate\&.
+T}
+.TE
+.sp 1
+.SH "SEE ALSO"
+.sp
+\fBafNewFileSetup\fR(3), \fBafInitFileFormat\fR(3), \fBafInitCompression\fR(3), \fBafOpenFile\fR(3)
+.SH "AUTHOR"
+.sp
+Michael Pruett <michael@68k\&.org>

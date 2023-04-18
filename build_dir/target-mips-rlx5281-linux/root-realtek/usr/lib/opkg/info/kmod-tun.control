@@ -1,0 +1,10 @@
+Package: kmod-tun
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-a7f84303e512c94837a166161dd231f8)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: realtek
+Installed-Size: 13336
+Description:  Kernel support for the TUN/TAP tunneling device

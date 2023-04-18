@@ -1,0 +1,18 @@
+Source-Makefile: package/chinadns/Makefile
+Package: ChinaDNS
+Version: 1.3.2-4
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Protect yourself against DNS poisoning in China.
+Maintainer: Jian Chang <aa65535@live.com>
+Source: ChinaDNS-1.3.2.tar.gz
+Type: ipkg
+Description: Protect yourself against DNS poisoning in China.
+https://github.com/shadowsocks/ChinaDNS
+Jian Chang <aa65535@live.com>
+@@
+
+

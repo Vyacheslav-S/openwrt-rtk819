@@ -1,0 +1,4 @@
+/etc/modules.d/lib-textsearch
+/lib/modules/3.10.49/ts_fsm.ko
+/lib/modules/3.10.49/ts_bm.ko
+/lib/modules/3.10.49/ts_kmp.ko

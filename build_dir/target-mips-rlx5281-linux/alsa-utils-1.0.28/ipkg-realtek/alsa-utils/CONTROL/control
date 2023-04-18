@@ -1,0 +1,9 @@
+Package: alsa-utils
+Version: 1.0.28-2
+Depends: libc, alsa-lib, libncurses, libpthread
+Source: feeds/packages/utils/alsa-utils
+Section: utils
+Maintainer: Ted Hess <thess@kitschensync.net>
+Architecture: realtek
+Installed-Size: 124618
+Description:  ALSA (Advanced Linux Sound Architecture) utilities

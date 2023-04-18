@@ -1,0 +1,1 @@
+WARNING: skipping freifunk-common -- package not selected

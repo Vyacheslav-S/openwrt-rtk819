@@ -1,0 +1,16 @@
+WARNING: skipping iptables-mod-extra -- package not selected
+WARNING: skipping iptables-mod-ipsec -- package not selected
+WARNING: skipping iptables-mod-nat-extra -- package not selected
+WARNING: skipping iptables-mod-iprange -- package not selected
+WARNING: skipping iptables-mod-ulog -- package not selected
+WARNING: skipping iptables-mod-hashlimit -- package not selected
+WARNING: skipping iptables-mod-led -- package not selected
+WARNING: skipping iptables-mod-tproxy -- package not selected
+WARNING: skipping iptables-mod-tee -- package not selected
+WARNING: skipping iptables-mod-u32 -- package not selected
+WARNING: skipping iptables-mod-nflog -- package not selected
+WARNING: skipping iptables-mod-nfqueue -- package not selected
+WARNING: skipping ip6tables -- package not selected
+WARNING: skipping ip6tables-extra -- package not selected
+WARNING: skipping ip6tables-mod-nat -- package not selected
+WARNING: skipping libiptc -- package not selected

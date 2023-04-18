@@ -1,0 +1,86 @@
+'\" t
+.\"     Title: afReadFrames
+.\"    Author: [see the "AUTHOR" section]
+.\" Generator: DocBook XSL Stylesheets v1.76.1 <http://docbook.sf.net/>
+.\"      Date: 03/06/2013
+.\"    Manual: \ \&
+.\"    Source: Audio File Library 0.3.6
+.\"  Language: English
+.\"
+.TH "AFREADFRAMES" "3" "03/06/2013" "Audio File Library 0\&.3\&.6" "\ \&"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+afReadFrames \- read sample frames from a track in an audio file
+.SH "SYNOPSIS"
+.sp
+.nf
+#include <audiofile\&.h>
+.fi
+.sp
+.nf
+AFframecount afReadFrames(AFfilehandle file, int track, void *data,
+    int count);
+.fi
+.SH "DESCRIPTION"
+.sp
+afReadFrames attempts to read up to \fIcount\fR frames of audio data from the audio file handle \fIfile\fR into the buffer at \fIdata\fR\&.
+.SH "PARAMETERS"
+.sp
+\fIfile\fR is a valid file handle returned by \fBafOpenFile\fR(3)\&.
+.sp
+\fItrack\fR is always AF_DEFAULT_TRACK for all currently supported file formats\&.
+.sp
+\fIdata\fR is a buffer of storing \fIcount\fR frames of audio sample data\&.
+.sp
+\fIcount\fR is the number of sample frames to be read\&.
+.SH "RETURN VALUE"
+.sp
+afReadFrames returns the number of frames successfully read from \fIfile\fR\&.
+.SH "ERRORS"
+.sp
+afReadFrames can produce these errors:
+.PP
+AF_BAD_FILEHANDLE
+.RS 4
+the file handle was invalid
+.RE
+.PP
+AF_BAD_TRACKID
+.RS 4
+the track parameter is not
+AF_DEFAULT_TRACK
+.RE
+.PP
+AF_BAD_READ
+.RS 4
+reading audio data from the file failed
+.RE
+.PP
+AF_BAD_LSEEK
+.RS 4
+seeking within the file failed
+.RE
+.SH "SEE ALSO"
+.sp
+\fBafWriteFrames\fR(3)
+.SH "AUTHOR"
+.sp
+Michael Pruett <michael@68k\&.org>

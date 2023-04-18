@@ -1,0 +1,289 @@
+'\" t
+.\"     Title: afQuery
+.\"    Author: [see the "AUTHOR" section]
+.\" Generator: DocBook XSL Stylesheets v1.76.1 <http://docbook.sf.net/>
+.\"      Date: 03/06/2013
+.\"    Manual: \ \&
+.\"    Source: Audio File Library 0.3.6
+.\"  Language: English
+.\"
+.TH "AFQUERY" "3" "03/06/2013" "Audio File Library 0\&.3\&.6" "\ \&"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+afQuery, afQueryLong, afQueryDouble, afQueryPointer \- query the capabilities of the Audio File Library
+.SH "SYNOPSIS"
+.sp
+.nf
+#include <audiofile\&.h>
+.fi
+.sp
+.nf
+AUpvlist afQuery (int querytype, int arg1, int arg2, int arg3, int arg4);
+.fi
+.sp
+.nf
+long afQueryLong (int querytype, int arg1, int arg2, int arg3, int arg4);
+.fi
+.sp
+.nf
+double afQueryDouble (int querytype, int arg1, int arg2, int arg3,
+    int arg4);
+.fi
+.sp
+.nf
+void *afQueryPointer (int querytype, int arg1, int arg2, int arg3,
+    int arg4);
+.fi
+.SH "PARAMETERS"
+.sp
+\fIquerytype\fR can be one of the following:
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+
+AF_QUERYTYPE_FILEFMT
+.RE
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+
+AF_QUERYTYPE_INST
+.RE
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+
+AF_QUERYTYPE_INSTPARAM
+.RE
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+
+AF_QUERYTYPE_COMPRESSION
+.RE
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+
+AF_QUERYTYPE_COMPRESSIONPARAM
+.RE
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+
+AF_QUERYTYPE_MISC
+.RE
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+
+AF_QUERYTYPE_MARK
+.RE
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+
+AF_QUERYTYPE_LOOP
+.RE
+.sp
+\fIarg1\fR, \fIarg2\fR, \fIarg3\fR, and \fIarg4\fR are integer selectors whose meaning depends upon \fIquerytype\fR\&.
+.SH "RETURN VALUE"
+.sp
+Upon success, afQuery will return a non\-null AUpvlist value\&. Upon failure, afQuery will return null while afQueryLong and afQueryDouble will return \-1 and afQueryPointer will return null\&.
+.sp
+Pointers representing character strings are owned by the Audio File Library and must not be freed; all other pointer values must be freed by the caller\&.
+.SH "DESCRIPTION"
+.sp
+For AF_QUERYTYPE_FILEFMT, the following selectors are valid values for \fIarg1\fR:
+.PP
+AF_QUERY_LABEL
+.RS 4
+Request a short label string for the format (e\&.g\&., "aiff")\&.
+.RE
+.PP
+AF_QUERY_NAME
+.RS 4
+Request a short name for the format (e\&.g\&., "MS RIFF WAVE")\&.
+.RE
+.PP
+AF_QUERY_DESC
+.RS 4
+Request a descriptive name for the format (e\&.g\&., "Audio Interchange File Format")\&.
+.RE
+.PP
+AF_QUERY_IMPLEMENTED
+.RS 4
+Request a boolean value indicating whether the format is implemented for reading and writing in the Audio File Library\&.
+.RE
+.PP
+AF_QUERY_ID_COUNT
+.RS 4
+Request the total number of formats implemented\&.
+.RE
+.PP
+AF_QUERY_IDS
+.RS 4
+Request an integer array of the id token values of all implemented file formats\&.
+.RE
+.PP
+AF_QUERY_COMPRESSION_TYPES
+.RS 4
+Used with the selector AF_QUERY_VALUE_COUNT in
+\fIarg2\fR, this will return a long integer containing the number of compression schemes available for use within the format specified in
+\fIarg3\fR\&. Used with selector
+AF_QUERY_VALUES, it returns a pointer to an integer array containing the compression id values of the compression schemes supported by the format specified in
+\fIarg3\fR\&.
+.RE
+.PP
+AF_QUERY_SAMPLE_FORMATS
+.RS 4
+Used with the selector AF_QUERY_DEFAULT in
+\fIarg2\fR, this will return the default sample format for the file format specified in
+\fIarg3\fR\&.
+.RE
+.PP
+AF_QUERY_SAMPLE_SIZES
+.RS 4
+Used with selector AF_QUERY_DEFAULT in
+\fIarg2\fR, this will return the default sample width for the file format specified in
+\fIarg3\fR\&.
+.RE
+.sp
+For AF_QUERYTYPE_INST, the following selectors are valid for \fIarg1\fR:
+.PP
+AF_QUERY_SUPPORTED
+.RS 4
+Request a boolean value indicating whether the file format in
+\fIarg2\fR
+supports instruments\&.
+.RE
+.PP
+AF_QUERY_MAX_NUMBER
+.RS 4
+Request an integer value indicating the maximum number of instruments supported by the file format in
+\fIarg2\fR\&.
+.RE
+.sp
+For AF_QUERYTYPE_INSTPARAM, the following selectors are valid for \fIarg1\fR:
+.PP
+AF_QUERY_SUPPORTED
+.RS 4
+Request a boolean value indicating whether the file format in
+\fIarg2\fR
+supports instrument parameters\&.
+.RE
+.PP
+AF_QUERY_ID_COUNT
+.RS 4
+Request an integer value indicating the number of instrument parameters supported by the file format in
+\fIarg2\fR\&.
+.RE
+.PP
+AF_QUERY_IDS
+.RS 4
+Request an integer array containing the instrument parameter values for the file format in
+\fIarg2\fR\&.
+.RE
+.PP
+AF_QUERY_TYPE
+.RS 4
+For the file format in
+\fIarg2\fR, request the type of the instrument parameter in
+\fIarg3\fR\&.
+.RE
+.PP
+AF_QUERY_NAME
+.RS 4
+For the file format in
+\fIarg2\fR, request the name of the instrument parameter in
+\fIarg3\fR\&.
+.RE
+.PP
+AF_QUERY_DEFAULT
+.RS 4
+For the file format in
+\fIarg2\fR, request the default value of the instrument parameter in
+\fIarg3\fR\&.
+.RE
+.SH "ERRORS"
+.sp
+afQuery can produce the following errors:
+.PP
+AF_BAD_QUERYTYPE
+.RS 4
+The query type is unsupported\&.
+.RE
+.PP
+AF_BAD_QUERY
+.RS 4
+The arguments to the query are bad\&.
+.RE
+.SH "AUTHOR"
+.sp
+Michael Pruett <michael@68k\&.org>

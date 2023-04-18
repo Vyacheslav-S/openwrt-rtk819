@@ -1,0 +1,74 @@
+'\" t
+.\"     Title: afGetFrameCount
+.\"    Author: [see the "AUTHOR" section]
+.\" Generator: DocBook XSL Stylesheets v1.76.1 <http://docbook.sf.net/>
+.\"      Date: 03/06/2013
+.\"    Manual: \ \&
+.\"    Source: Audio File Library 0.3.6
+.\"  Language: English
+.\"
+.TH "AFGETFRAMECOUNT" "3" "03/06/2013" "Audio File Library 0\&.3\&.6" "\ \&"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+afGetFrameCount, afGetTrackBytes, afGetDataOffset \- get the total sample frame count, length of audio track in bytes, offset of the audio track for a track in an audio file
+.SH "SYNOPSIS"
+.sp
+.nf
+#include <audiofile\&.h>
+.fi
+.sp
+.nf
+AFframecount afGetFrameCount (AFfilehandle file, int track);
+.fi
+.sp
+.nf
+AFfileoffset afGetTrackBytes (AFfilehandle file, int track);
+.fi
+.sp
+.nf
+AFfileoffset afGetDataOffset (AFfilehandle file, int track);
+.fi
+.SH "PARAMETERS"
+.sp
+\fIfile\fR is an audio file handle created by a previous call to \fBafOpenFile\fR(3)\&.
+.sp
+\fItrack\fR is an integer which specifies an audio track within \fIfile\fR\&. All supported file formats contain exactly one audio track per file, so the constant AF_DEFAULT_TRACK should always be used\&.
+.SH "DESCRIPTION"
+.sp
+afGetFrameCount returns the total number of sample frames contained within the specified track of the specified file\&.
+.sp
+Each sample frame of audio consists of a fixed number of samples (equal to the number of audio channels in the track\&. For monaural data, a sample frame consists of one audio sample\&. For stereophonic data, a sample frame consists of a stereo pair\&.
+.sp
+afGetTrackBytes returns the total number of bytes of raw audio data (i\&.e\&., prior to decompression or conversion) in the track\&.
+.sp
+afGetDataOffset returns the offset in bytes of the start of the audio data contained within the specified track of the specified file\&.
+.SH "RETURN VALUE"
+.sp
+afGetFrameCount returns the total number of sample frames in \fItrack\fR\&.
+.sp
+afGetTrackBytes returns the total number of bytes of audio data in \fItrack\fR\&.
+.sp
+afGetDataOffset returns the offset in bytes to the beginning of the audio data in \fItrack\fR\&.
+.sp
+Each of these routines returns \-1 in case of error\&.
+.SH "AUTHOR"
+.sp
+Michael Pruett <michael@68k\&.org>

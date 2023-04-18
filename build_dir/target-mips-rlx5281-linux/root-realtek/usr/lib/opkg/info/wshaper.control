@@ -1,0 +1,13 @@
+Package: wshaper
+Version: 1.1a-1
+Depends: libc, kmod-sched, tc
+Source: feeds/packages/net/wshaper
+Section: net
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: all
+Installed-Size: 2069
+Description:  A script to do traffing shaping with the HTB algorithm.
+ Wshaper attempts to:
+ * Maintain low latency for interfactive traffic at all times
+ * Allow 'surfing' at reasonable speeds while up or downloading
+ * Make sure uploads don't harm downloads, and the other way around

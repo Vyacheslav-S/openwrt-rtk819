@@ -1,0 +1,186 @@
+'\" t
+.\"     Title: afSetVirtualSampleFormat
+.\"    Author: [see the "AUTHOR" section]
+.\" Generator: DocBook XSL Stylesheets v1.76.1 <http://docbook.sf.net/>
+.\"      Date: 03/06/2013
+.\"    Manual: \ \&
+.\"    Source: Audio File Library 0.3.6
+.\"  Language: English
+.\"
+.TH "AFSETVIRTUALSAMPLEFO" "3" "03/06/2013" "Audio File Library 0\&.3\&.6" "\ \&"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+afSetVirtualByteOrder, afSetVirtualChannels, afSetVirtualPCMMapping, afSetVirtualSampleFormat \- set the virtual data format for a track in an audio file
+.SH "SYNOPSIS"
+.sp
+.nf
+#include <audiofile\&.h>
+.fi
+.sp
+.nf
+int afSetVirtualByteOrder (AFfilehandle file, int track, int byteOrder);
+.fi
+.sp
+.nf
+int afSetVirtualChannels (AFfilehandle file, int track, int channels);
+.fi
+.sp
+.nf
+int afSetVirtualSampleFormat (AFfilehandle file, int track,
+    int sampleFormat, int sampleWidth);
+.fi
+.sp
+.nf
+int afSetVirtualPCMMapping (AFfilehandle file, int track,
+    double slope, double intercept, double minclip, double maxclip);
+.fi
+.SH "PARAMETERS"
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+
+\fIfile\fR
+is an AFfilehandle which refers to an open audio file and is usually created by afOpenFile\&.
+.RE
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+
+\fItrack\fR
+is an integer which identifies a particular track in an open audio file\&. The only valid track is
+AF_DEFAULT_TRACK
+for all currently supported file formats\&.
+.RE
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+
+\fIsampleFormat\fR
+is an integer which denotes a virtual sample format\&. Valid values are
+AF_SAMPFMT_TWOSCOMP,
+AF_SAMPFMT_UNSIGNED,
+AF_SAMPFMT_FLOAT, and
+AF_SAMPFMT_DOUBLE\&.
+.RE
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+
+\fIsampleWidth\fR
+is a positive integer which specifies the number of bits in a sample\&.
+.RE
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+
+\fIchannels\fR
+is a positive integer which specifies the number of interleaved audio channels in the given audio track\&.
+.RE
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+
+\fIbyteOrder\fR
+is an integer which specifies the virtual byte order of samples in the given audio track\&.
+\fIbyteOrder\fR
+can be either
+AF_BYTEORDER_BIGENDIAN
+or
+AF_BYTEORDER_LITTLEENDIAN\&.
+.RE
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+
+\fIslope\fR
+and
+\fIintercept\fR
+are double\-precision floating point values which indicate the audio data sample slope and zero\-crossing value, respectively, for the given sample format\&.
+.RE
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+
+\fIminclip\fR
+and
+\fImaxclip\fR
+are double\-precision floating point values which indicates the minimum or maximum sample values to be returned\&. Any values less than
+\fIminclip\fR
+will be set to
+\fIminclip\fR, and any values greater than
+\fImaxclip\fR
+will be set to
+\fImaxclip\fR\&.
+.RE
+.SH "RETURN VALUE"
+.sp
+These functions return 0 for success and \-1 for failure\&.
+.SH "AUTHOR"
+.sp
+Michael Pruett <michael@68k\&.org>

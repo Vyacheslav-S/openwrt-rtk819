@@ -1,0 +1,4 @@
+libc
+libgcc
+libpthread
+librt

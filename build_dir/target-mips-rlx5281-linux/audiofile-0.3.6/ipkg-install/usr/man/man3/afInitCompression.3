@@ -1,0 +1,117 @@
+'\" t
+.\"     Title: afInitByteOrder
+.\"    Author: [see the "AUTHOR" section]
+.\" Generator: DocBook XSL Stylesheets v1.76.1 <http://docbook.sf.net/>
+.\"      Date: 03/06/2013
+.\"    Manual: \ \&
+.\"    Source: Audio File Library 0.3.6
+.\"  Language: English
+.\"
+.TH "AFINITBYTEORDER" "3" "03/06/2013" "Audio File Library 0\&.3\&.6" "\ \&"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+afInitCompression \- initialize compression for a track in an audio file setup
+.SH "SYNOPSIS"
+.sp
+.nf
+#include <audiofile\&.h>
+.fi
+.sp
+.nf
+void afInitCompression(AFfilesetup setup, int track, int compression);
+.fi
+.SH "PARAMETERS"
+.sp
+setup is a valid file setup returned by \fBafNewFileSetup\fR(3)\&.
+.sp
+track specifies a track within the audio file setup\&. track is always AF_DEFAULT_TRACK for all currently supported file formats\&.
+.sp
+compression is an identifier specifying the compression type (such as AF_COMPRESSION_G711_ULAW) to be used for audio data in the track\&.
+.SH "DESCRIPTION"
+.sp
+Given an AFfilesetup structure created with \fBafNewFileSetup\fR(3) and a track identified by track (AF_DEFAULT_TRACK for all currently supported file formats), afInitCompression initializes the track to the specified compression\&.
+.sp
+The following compression types are currently supported:
+.PP
+AF_COMPRESSION_NONE
+.RS 4
+no compression
+.RE
+.PP
+AF_COMPRESSION_G711_ULAW
+.RS 4
+CCITT G\&.711 mu\-law encoding
+.RE
+.PP
+AF_COMPRESSION_G711_ALAW
+.RS 4
+CCITT G\&.711 A\-law encoding
+.RE
+.PP
+AF_COMPRESSION_IMA
+.RS 4
+IMA ADPCM encoding
+.RE
+.PP
+AF_COMPRESSION_MS_ADPCM
+.RS 4
+MS ADPCM encoding
+.RE
+.PP
+AF_COMPRESSION_FLAC
+.RS 4
+FLAC
+.RE
+.PP
+AF_COMPRESSION_ALAC
+.RS 4
+Apple Lossless Audio Codec
+.RE
+.SH "ERRORS"
+.sp
+afInitCompression can produce the following errors:
+.PP
+AF_BAD_FILESETUP
+.RS 4
+
+setup
+represents an invalid file setup\&.
+.RE
+.PP
+AF_BAD_TRACKID
+.RS 4
+
+track
+represents an invalid track identifier\&.
+.RE
+.PP
+AF_BAD_COMPTYPE
+.RS 4
+
+compression
+represents an invalid compression type\&.
+.RE
+.SH "SEE ALSO"
+.sp
+\fBafNewFileSetup\fR(3), \fBafInitSampleFormat\fR(3)
+.SH "AUTHOR"
+.sp
+Michael Pruett <michael@68k\&.org>

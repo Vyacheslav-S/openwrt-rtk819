@@ -1,0 +1,11 @@
+/lib/modules/3.10.49/cls_tcindex.ko
+/lib/modules/3.10.49/em_u32.ko
+/lib/modules/3.10.49/cls_route.ko
+/etc/modules.d/70-sched-core
+/lib/modules/3.10.49/cls_u32.ko
+/lib/modules/3.10.49/cls_fw.ko
+/lib/modules/3.10.49/sch_hfsc.ko
+/lib/modules/3.10.49/sch_ingress.ko
+/lib/modules/3.10.49/act_skbedit.ko
+/lib/modules/3.10.49/act_mirred.ko
+/lib/modules/3.10.49/cls_flow.ko

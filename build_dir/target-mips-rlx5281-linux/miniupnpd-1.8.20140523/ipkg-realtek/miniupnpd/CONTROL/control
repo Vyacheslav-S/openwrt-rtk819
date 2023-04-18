@@ -1,0 +1,9 @@
+Package: miniupnpd
+Version: 1.8.20140523-4
+Depends: libc, iptables, libip4tc, libnfnetlink
+Source: feeds/routing/miniupnpd
+Section: net
+Maintainer: Markus Stenberg <fingon@iki.fi>
+Architecture: realtek
+Installed-Size: 47909
+Description:  Lightweight UPnP IGD, NAT-PMP & PCP daemon

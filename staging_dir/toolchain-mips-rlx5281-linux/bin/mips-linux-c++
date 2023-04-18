@@ -1,0 +1,7 @@
+#!/bin/sh
+for arg in "$@"; do
+ case "$arg" in -l*|-L*|-shared|-static)
+  exec "/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/mips-linux-c++" -Os -pipe -march=5281 -muclibc  -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib ${STAGING_DIR:+-idirafter "$STAGING_DIR/usr/include" -L "$STAGING_DIR/usr/lib" -Wl,-rpath-link,"$STAGING_DIR/usr/lib"} "$@" ;;
+ esac
+done
+exec "/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001/bin/mips-linux-c++" -Os -pipe -march=5281 -muclibc  -I/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//include -L/home/svm/openwrt_rtk/rtk_openwrt_sdk/staging_dir/rsdk-4.6.4-5281-EB-3.10-0.9.33-m32ub-20141001//lib ${STAGING_DIR:+-idirafter "$STAGING_DIR/usr/include"} "$@"

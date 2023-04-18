@@ -1,0 +1,46 @@
+Source-Makefile: package/network/services/openvpn/Makefile
+Package: openvpn-openssl
+Menu: 1
+Submenu: VPN
+Version: 2.5.3-4
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread +kmod-tun +OPENVPN_openssl_ENABLE_LZO:liblzo +OPENVPN_openssl_ENABLE_IPROUTE2:ip +PACKAGE_openvpn-openssl:libopenssl
+Menu-Depends: 
+Provides: openvpn openvpn-crypto
+Build-Variant: openssl
+Section: net
+Category: Network
+Title: Open source VPN solution using OpenSSL
+Maintainer: Magnus Kroken <mkroken@gmail.com>
+Source: openvpn-2.5.3.tar.xz
+Type: ipkg
+Description: Open source VPN solution using OpenSSL
+http://openvpn.net
+Magnus Kroken <mkroken@gmail.com>
+@@
+Config:
+	source "package/network/services/openvpn/Config-openssl.in"
+@@
+
+Package: openvpn-mbedtls
+Menu: 1
+Submenu: VPN
+Version: 2.5.3-4
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread +kmod-tun +OPENVPN_mbedtls_ENABLE_LZO:liblzo +OPENVPN_mbedtls_ENABLE_IPROUTE2:ip +PACKAGE_openvpn-mbedtls:libmbedtls
+Menu-Depends: 
+Provides: openvpn openvpn-crypto
+Build-Variant: mbedtls
+Section: net
+Category: Network
+Title: Open source VPN solution using mbedTLS
+Maintainer: Magnus Kroken <mkroken@gmail.com>
+Source: openvpn-2.5.3.tar.xz
+Type: ipkg
+Description: Open source VPN solution using mbedTLS
+http://openvpn.net
+Magnus Kroken <mkroken@gmail.com>
+@@
+Config:
+	source "package/network/services/openvpn/Config-mbedtls.in"
+@@
+
+

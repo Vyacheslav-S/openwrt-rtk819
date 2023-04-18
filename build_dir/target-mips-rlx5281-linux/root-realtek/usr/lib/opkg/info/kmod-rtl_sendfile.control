@@ -1,0 +1,8 @@
+Package: kmod-rtl_sendfile
+Version: 3.10.49+0.1-1
+Depends: kernel (=3.10.49-1-a7f84303e512c94837a166161dd231f8)
+Source: package/kernel/rtl_sendfile
+Section: kernel
+Architecture: realtek
+Installed-Size: 7899
+Description:  Improve performance on socket-to-file by using zero copy techonology.

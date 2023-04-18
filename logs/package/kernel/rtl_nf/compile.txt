@@ -1,0 +1,6 @@
+make[4]: Entering directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/linux-realtek_rtl819xd/linux-3.10.49'
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[4]: Leaving directory '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/linux-realtek_rtl819xd/linux-3.10.49'
+rstrip.sh: /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/linux-realtek_rtl819xd/rtl_nf-0.1/ipkg-realtek/kmod-rtl_nf/lib/modules/3.10.49/rtl_nf.ko:relocatable
+Packaged contents of /home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/linux-realtek_rtl819xd/rtl_nf-0.1/ipkg-realtek/kmod-rtl_nf into /home/svm/openwrt_rtk/rtk_openwrt_sdk/bin/realtek/packages/base/kmod-rtl_nf_3.10.49+0.1-1_realtek.ipk
