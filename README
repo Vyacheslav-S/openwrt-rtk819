@@ -3,7 +3,7 @@
 
 This is a porting OpenWrt for realtek - the firmware used by all realtek 819x routers. 
 
-Compiled on Ubuntu 18.04.6 LTS (Bionic Beaver)
+Build system setup: Ubuntu 16.04 (32-bit), Ubuntu 18.04.6 LTS.
 
 At this time, the supported devices are:
 
