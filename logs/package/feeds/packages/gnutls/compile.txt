@@ -1,2 +1,0 @@
-WARNING: skipping gnutls-utils -- package not selected
-WARNING: skipping libgnutls-openssl -- package not selected

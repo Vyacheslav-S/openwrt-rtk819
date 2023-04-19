@@ -1,3 +1,0 @@
-install: cannot stat './release//*.ko': No such file or directory
-Makefile:63: recipe for target '/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/linux-realtek_rtl819xd/rtl_fs-0.1/.prepared_7e289415d8e947b9a7a50983796e0d24' failed
-make[3]: *** [/home/svm/openwrt_rtk/rtk_openwrt_sdk/build_dir/target-mips-rlx5281-linux/linux-realtek_rtl819xd/rtl_fs-0.1/.prepared_7e289415d8e947b9a7a50983796e0d24] Error 1

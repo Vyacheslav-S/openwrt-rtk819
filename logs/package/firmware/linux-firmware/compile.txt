@@ -1,2 +1,0 @@
-WARNING: skipping r8169-firmware -- package not selected
-WARNING: skipping r8188eu-firmware -- package not selected

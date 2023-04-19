@@ -1,2 +1,0 @@
-bash: mkhash: command not found
-WARNING: skipping openssl-util -- package not selected

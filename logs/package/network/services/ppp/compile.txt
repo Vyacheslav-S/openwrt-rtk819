@@ -1,7 +1,0 @@
-WARNING: skipping ppp-mod-pppoa -- package not selected
-WARNING: skipping ppp-mod-radius -- package not selected
-WARNING: skipping ppp-mod-pppol2tp -- package not selected
-WARNING: skipping ppp-mod-pptp -- package not selected
-WARNING: skipping chat -- package not selected
-WARNING: skipping pppdump -- package not selected
-WARNING: skipping pppstats -- package not selected

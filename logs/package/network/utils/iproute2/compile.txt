@@ -1,2 +1,0 @@
-WARNING: skipping genl -- package not selected
-WARNING: skipping ss -- package not selected
